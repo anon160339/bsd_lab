@@ -22,7 +22,7 @@ Niemal identyczny system został zaimplementowany w narzędziu [Tornado Cash](ht
 ### Wyjaśnienie ***wpisu***
 
 - Para `s` i `k` to odpowiednio sekret i "nullifier". Udowodnienie znajomości takiego `s` przy jawnych paramtrach `k`, `H`, `c` i które spełnia warunek `H(s, k) === c` można interpretować jako jednorazowy klucz OTP (one time pad).
-    - Dowód zerowej wiedzy opisany w punkcie 3 ujawniając `k` jednocześnie identyfikuje ze sobą ukryty w dowodzie `H(s, k)` który w otoczeniu innych elementów dalej nie ujawnia ani `s`, ani `H(s, k)`, co utrudnia asocjacje `k` z ***wpisem***.
+    - Dowód zerowej wiedzy opisany w punkcie 3, ujawniając `k` jednocześnie identyfikuje ze sobą ukryty w dowodzie `H(s, k)` który w otoczeniu innych elementów dalej nie ujawnia ani `s`, ani `H(s, k)`, co utrudnia asocjacje `k` z ***wpisem***.
 
 ### Ograniczenia systemu
 
