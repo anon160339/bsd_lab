@@ -71,6 +71,8 @@ Moja wiedza i doświadczenie nie potrafi odpowiedzieć na to pytanie, lecz intui
 
 - Cenzura - Serwis może odrzucać głosy.
     - *Rowzwiązanie szukać można poprzez decentalizacje serwisu.*
+- "Wulgarność" dowodów - Wybrana `wiadomość` z dowodu może przyjmować wulgarne treści.
+    - *Rozwiązać to można poprzez obostrzenia zagwarantowanie w dowodzie aby `wiadomość` przyjmowała odpowiednie wartości. (np: liczby inne niż 69)*
 - Brak konceptu "stealth address"'ów - ***Uczestnicy*** widzą innych ***uczestników*** przypisanych do danego ***głosowania***.
 - Tworzenie ***wpisów*** - Jest to dodatkowy proces który ujawnia kto nie wział udziału w głosowaniu.
 - Czasowość dowodów - Tworzenie i weryfikacja dowodu są zależne od aktualnej `tablicy wpisów`.
