@@ -55,4 +55,3 @@ Moja wiedza i doświadczenie nie potrafi odpowiedzieć na to pytanie, lecz intui
 
 - Cenzura - Serwis może odrzucać głosy. Rowzwiązanie szukać można poprzez decentalizacje serwisu.
 - Brak konceptu "stealth address"'ów - Użytkownicy mogą jawnie oddawać głosy
-- Modyfikowalność `tablicy wpisów` - ***wpisy*** wstawiane są w sposób który umożliwia łatwe ich usunięcie. Łatwym rozwiązaniem jest zastosowanie struktury podobnej do blockchain'a.
