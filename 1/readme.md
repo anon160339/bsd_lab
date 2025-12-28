@@ -1,6 +1,6 @@
 # Modelowana rzeczywistość
 
-Modelowana będzie teoretyczna baza danych służąca do przeprowadzania anonimowych głosowań studentów politechniki. Serwis ma odzwierciedlać system w którym zaufanie do serwisu i innych użytkowniów względem studenta jest jak najmniej potrzebne.
+Modelowana będzie teoretyczna baza danych służąca do przeprowadzania anonimowych głosowań wśród studentów politechniki. Serwis ma odzwierciedlać system w którym zaufanie do dowlnej strony jest jak najmniej potrzebne.
 
 # Pochodzenie encji
 
