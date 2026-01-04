@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_12" directorySegmentName="seg_0" id="EE29B13E-EF11-48CB-0246-EDDC4A6E87D2">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-04 20:35:41 UTC</createdTime>
+<ownerDesignName>diag</ownerDesignName>
+<engineerTo>
+<item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<nameOnSource>made</nameOnSource>
+<nameOnTarget>is made by</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>01937789-7A07-8DB2-6F8C-298014BB91E6</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>01937789-7A07-8DB2-6F8C-298014BB91E6</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

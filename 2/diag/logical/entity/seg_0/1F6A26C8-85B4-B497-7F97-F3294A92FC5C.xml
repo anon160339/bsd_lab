@@ -1,0 +1,52 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1F6A26C8-85B4-B497-7F97-F3294A92FC5C" name="option">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-04 20:20:06 UTC</createdTime>
+<ownerDesignName>diag</ownerDesignName>
+<engineerTo>
+<item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="name" id="92E0F433-E0BA-1D9A-73D4-7D971A8AC971">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-04 20:21:25 UTC</createdTime>
+<ownerDesignName>diag</ownerDesignName>
+<engineerTo>
+<item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="min_value" id="24D1E95C-50C0-077E-D58D-0ABE1D739A7C">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-04 20:21:41 UTC</createdTime>
+<ownerDesignName>diag</ownerDesignName>
+<engineerTo>
+<item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="max_value" id="B417C235-C1B5-CCF6-2396-B3ADF52FD075">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-04 20:45:25 UTC</createdTime>
+<ownerDesignName>diag</ownerDesignName>
+<engineerTo>
+<item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

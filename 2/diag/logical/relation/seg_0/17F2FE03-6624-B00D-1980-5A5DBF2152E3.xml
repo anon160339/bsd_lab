@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_5" directorySegmentName="seg_0" id="17F2FE03-6624-B00D-1980-5A5DBF2152E3">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-04 20:08:57 UTC</createdTime>
+<ownerDesignName>diag</ownerDesignName>
+<engineerTo>
+<item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<nameOnSource>forms indexed array from</nameOnSource>
+<nameOnTarget>belongs</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>FCB45B8E-DE1D-C4ED-6633-BEDAB48D8EBF</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>5FE5AEAE-34A6-29EE-BC42-FEFB20244EF9</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

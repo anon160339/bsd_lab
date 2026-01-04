@@ -1,11 +1,16 @@
 
-1. ***Użytkownik***
-2. ***Głosowanie***
-3. ***Załączniki***
-4. ***Uczestnik***
-5. ***Wpisy***
-6. ***Głosy***
-7. ***Opcje***
+1. ***Użytkownik*** ->  `user`
+    - `public_key` - standard `secpk256k1` (65 znaków)
+    - `profile_name`
+    - `sign_profile`
+    - `permissions`
+    - `father`*
+2. ***Głosowanie*** ->  `poll`
+3. ***Załączniki*** ->  `attachment`
+4. ***Uczestnik***  ->  `member`
+5. ***Wpisy***      ->  `entry`
+6. ***Głosy***      ->  `vote`
+7. ***Opcje***      ->  `option`
 
 ***Użytkownik*** tworzy ***Głosowanie***
 ***Głosowanie***:

@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="diag" id="E5563FC7-E232-0C9D-517E-99D503B0CF50" version="3.5">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-04 19:36:55 UTC</createdTime>
+<ownerDesignName>diag</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>E5563FC7-E232-0C9D-517E-99D503B0CF50</designId>
+</OSDM_Design>
