@@ -26,13 +26,38 @@
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="384" y="6" width="110" height="93"/>
 </OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="45BFC1A0-6EB3-38C7-CCC0-17EC087FD28B" otype="Note" vid="61181296-B316-D4E1-FD4C-F65F9123C73B">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="501" y="0" width="419" height="92"/>
+<comment>Vote is accepted if:
+- `proof_vote` with revealed `vote_*` signals forms a valid proof.
+- `vote_entries_root` equals the current Merkle Root out of a current set of commits.
+- the same `vote_nullifier` has not been mentioned in relation to this poll
+* `vote_previous_vote` correctly references the hash of a previously casted vote
+- `vote_value` can be associated with specific option. </comment>
+</OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="5FE5AEAE-34A6-29EE-BC42-FEFB20244EF9" otype="Entity" vid="EE0B1E11-E36A-829A-87E3-AEF3EB1A616E">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="731" y="271" width="172" height="163"/>
 </OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="63A47D1E-2E4C-8220-6E35-139E7AAC8261" otype="Note" vid="BD379966-9A6F-4A31-FB89-3D2696F90B47">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="646" y="445" width="238" height="61"/>
+<comment>Commits form an indexed array (which can be used to calculate a Merkle Root, which is useful for ZK proofs).</comment>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="9123F044-6D44-FA45-D67E-2160C12F0976" otype="Note" vid="610B1452-1A42-B06F-2685-30498F4682E9">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="73" y="433" width="180" height="47"/>
+<comment>Root user doesn&apos;t have a parent</comment>
+</OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="D99A17FC-09BB-0DF0-6533-197E8603A8E8" otype="Entity" vid="678C45E6-C3B8-FFEE-7B53-088440EFF871">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="746" y="63" width="141" height="118"/>
+<bounds x="686" y="100" width="141" height="123"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="E60BE395-A63D-3EB1-B717-1D3BD01BDF63" otype="Note" vid="BCDE713C-ADA8-6517-D002-FA611BBC36B0">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="305" y="163" width="131" height="61"/>
+<comment>Poll is active only when it&apos;s signed by the owner.</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="FCB45B8E-DE1D-C4ED-6633-BEDAB48D8EBF" otype="Entity" vid="2F86E315-0476-A028-6AFD-463EF71F5EF7">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -145,6 +170,27 @@
 <point x="219" y="389"/>
 </points>
 </Connector>
+<Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="C7AEBCB3-06B6-F692-0286-91215CC78C8C" otype="Relation" vid_source="678C45E6-C3B8-FFEE-7B53-088440EFF871" vid_target="F8435E24-BB81-8116-9062-FABD86BC0C30">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<sourceLabel class="oracle.dbtools.crest.model.design.Label">
+<site>0</site>
+<labelBounds x="708" y="248" width="52" height="19"/>
+<noBackgroundColor>true</noBackgroundColor>
+<noForegroundColor>true</noForegroundColor>
+</sourceLabel>
+<targetLabel class="oracle.dbtools.crest.model.design.Label">
+<site>2</site>
+<labelBounds x="495" y="446" width="111" height="46"/>
+<noBackgroundColor>true</noBackgroundColor>
+<noForegroundColor>true</noForegroundColor>
+</targetLabel>
+<points>
+<point x="708" y="223"/>
+<point x="495" y="498"/>
+</points>
+</Connector>
 <Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="CB45A0BA-767A-4A7B-C793-F8B5C5C36A33" otype="Relation" vid_source="E6B7DF23-CC09-8022-9721-F8A9B6CFCD35" vid_target="51A89A55-DDC8-E68B-DE16-C44A705CF8B8">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <backgroundColor>-16777216</backgroundColor>
@@ -172,7 +218,7 @@
 <lineWidth>1</lineWidth>
 <sourceLabel class="oracle.dbtools.crest.model.design.Label">
 <site>0</site>
-<labelBounds x="29" y="126" width="40" height="33"/>
+<labelBounds x="29" y="123" width="84" height="36"/>
 <noBackgroundColor>true</noBackgroundColor>
 <noForegroundColor>true</noForegroundColor>
 </sourceLabel>
@@ -196,19 +242,19 @@
 <lineWidth>1</lineWidth>
 <sourceLabel class="oracle.dbtools.crest.model.design.Label">
 <site>0</site>
-<labelBounds x="633" y="156" width="107" height="30"/>
+<labelBounds x="573" y="193" width="107" height="30"/>
 <noBackgroundColor>true</noBackgroundColor>
 <noForegroundColor>true</noForegroundColor>
 </sourceLabel>
 <targetLabel class="oracle.dbtools.crest.model.design.Label">
 <site>2</site>
-<labelBounds x="531" y="266" width="71" height="30"/>
+<labelBounds x="531" y="268" width="71" height="30"/>
 <noBackgroundColor>true</noBackgroundColor>
 <noForegroundColor>true</noForegroundColor>
 </targetLabel>
 <points>
-<point x="746" y="156"/>
-<point x="521" y="266"/>
+<point x="686" y="193"/>
+<point x="521" y="268"/>
 </points>
 </Connector>
 </connectors>

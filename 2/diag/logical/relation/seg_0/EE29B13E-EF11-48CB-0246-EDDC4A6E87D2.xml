@@ -7,8 +7,8 @@
 <item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
 </engineerTo>
 <identifying>false</identifying>
-<nameOnSource>made</nameOnSource>
-<nameOnTarget>is made by</nameOnTarget>
+<nameOnSource>is parent of</nameOnSource>
+<nameOnTarget>is child of</nameOnTarget>
 <optionalSource>true</optionalSource>
 <optionalTarget>true</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
