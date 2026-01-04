@@ -10,8 +10,8 @@
 <nameOnSource>describes</nameOnSource>
 <nameOnTarget>is described by</nameOnTarget>
 <optionalSource>true</optionalSource>
-<optionalTarget>false</optionalTarget>
-<sourceCardinality>1</sourceCardinality>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
 <sourceEntity>22CB2E59-45EC-CA14-F092-80C310C6B7EB</sourceEntity>
 <targetCardinalityString>*</targetCardinalityString>
 <targetEntity>FCB45B8E-DE1D-C4ED-6633-BEDAB48D8EBF</targetEntity>

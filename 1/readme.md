@@ -1,23 +1,27 @@
 # Modelowana rzeczywistość
 
-Modelowana będzie teoretyczna baza danych służąca do przeprowadzania anonimowych głosowań wśród studentów politechniki. Serwis ma odzwierciedlać system w którym zaufanie do dowlnej strony jest jak najmniej potrzebne.
+Modelowana będzie teoretyczna baza danych służąca do przeprowadzania anonimowych głosowań. Serwis tej bazy danych ma odzwierciedlać system w którym zaufanie do dowlnej strony jest jak najmniej potrzebne.
 
 # Pochodzenie encji
 
 ## Główny schemat głosowania:
 
-1. ***Użytkownik*** tworzy ***głosowanie*** z jawnymi parametrami, jawnie przypisanymi do niego ***uczestnikami*** oraz jawnymi ***załącznikami***, z którego ***uczestnicy*** oraz serwis mogą odczytać stały `hash głosowania`.
-2. ***Uczestnicy*** jawnie tworzą pojedyńcze ***wpisy*** dla danego ***głosowania***, tworzące poindeksowaną `tablice wpisów`. Każdy element tej tablicy to hash wynikający z pary tajnych parametrów `s` i `k` (`hash = H(s, k)`).
+1. ***Użytkownik*** tworzy ***głosowanie*** z jawnymi parametrami, jawnie przypisanymi do niego ***uczestnikami*** oraz jawnymi ***załącznikami*** i jawnymi ***opcjami***, z którego ***uczestnicy*** oraz serwis mogą odczytać stały `hash głosowania` (wiążący te 3 elementy).
+2. ***Uczestnicy*** jawnie tworzą pojedyńcze ***wpisy*** dla danego ***głosowania***, tworzące poindeksowaną `tablice wpisów`. Każdy element tej tablicy zawiera hash wynikający z pary tajnych parametrów `s` i `k` (tak zwany "nullifier") (`hash = H(s, k)`).
+    - Aby utrudnić bazie danych modyfikacje elmentów `tablicy wpisów`, można interpretować elementy tej tablicy jako bloki, gdzie każdy blok odnosi się do o 1 starszego bloku, tworząc tak zwany "blockchain". Dlatego każdy ***wpis*** powinien wiązać poprzedni zarejestrowany ***wpis***.
+    - Aby utrudnić zmianę samego opisu głosowania (Nie mieć zaufania do Autora i Serwisu) każdy wpis powinien wiąząć jawny `hash głosowania` wynikający z ***głosowania***, ***załączników***, ***opcji*** i opcjonalnie ***uczstników*** *(Jest to bez znaczenie gdy strona właściciela głosowania jest stroną serwisu.) (Uporządkowany zbiór ***uczestników*** można otrzymać poprzez ich posortowanie.)*.
 3. Anonimowe źródła dostarczają do serwisu ***głosy*** zawierające w sobie dowód (zerowej wiedzy) który:
     - Wiąże jawną `wiadomość` będącą wyborem przez ***Uczestnika***.
-    - Wiąże jawny `hash głosowania` wynikający z ***głosowania***, ***uczstników*** i ***załączników***.
-    - Udowadnia zawarcie takich elementów tablicy oraz takiej pary `s` i wiążącego jawnie `k`, które tworzą identyczną `tablice wpisów` jaką serwis dysponuje w danym momencie. *(`tablica wpisów` może okazać się wielka, dlatego skrócić ją można poprzez strukture Merkle Tree)*.
+    - Udowadnia zawarcie takich elementów tablicy oraz takiej pary `s` i wiążącego jawnie `k`, które tworzą identyczną `tablice wpisów` jaką serwis dysponuje w danym momencie. *(`tablica wpisów` może okazać się wielka, dlatego skrócić ją można poprzez strukture* **Merkle Tree***, oraz dowodu* **Merkle Proof** *który udowadnia występowanie elemntu w tablicy o danym skrócie.)*
+    - Może wiąząć poprzedni oddany głos tworząc strukturę łańcuchową 
 4. Jeśli dowód jest prawdziwy i powiązane z nim jawne wartości pokrywają się z aktualnym stanem `tablicy wpisów`, to ***głos*** zostaje tylko raz zapisany do bazy danych. (nie mogą istnieć 2 głosy o takim samym `k`)
     - Możliwość sprawdzenia ***głosów*** przez ***uczestników*** pozwala im skontrolować ucziwość serwisu.
 
+*Wszystkie wymienione wyżej obiekty bazo danowe są praktycznie jawnie.*
+
 ### Inspiracja
 
-Niemal identyczny system został zaimplementowany w narzędziu [Tornado Cash](https://github.com/tornadocash) służącym do anonimizacji pochodzenia kapitału, operującego na kryptowalutach na wielu sieciach.
+Niemal identyczny system został zaimplementowany w narzędziu [Tornado Cash](https://github.com/tornadocash) służącym do anonimizacji pochodzenia kapitału, operującego na kryptowalutach na wielu sieciach. (*Zamiast `adresu` na który mają być wysłane pieniądze ze skarbca, wstawiłem `wiadomość` głosu.*)
 
 ### Wyjaśnienie ***wpisu***
 
@@ -72,8 +76,9 @@ Moja wiedza i doświadczenie nie potrafi odpowiedzieć na to pytanie, lecz intui
 - Cenzura - Serwis może odrzucać głosy.
     - *Rowzwiązanie szukać można poprzez decentalizacje serwisu.*
 - "Wulgarność" dowodów - Wybrana `wiadomość` z dowodu może przyjmować wulgarne treści.
-    - *Rozwiązać to można poprzez obostrzenia zagwarantowanie w dowodzie aby `wiadomość` przyjmowała odpowiednie wartości. (np: liczby inne niż 69)*
+    - *Rozwiązać to można poprzez obostrzenia jak na przykład zagwarantowanie w dowodzie aby `wiadomość` przyjmowała odpowiednie wartości. (np: liczby inne niż 69)*
 - Brak konceptu "stealth address"'ów - ***Uczestnicy*** widzą innych ***uczestników*** przypisanych do danego ***głosowania***.
-- Tworzenie ***wpisów*** - Jest to dodatkowy proces który ujawnia kto nie wział udziału w głosowaniu.
+- **Tworzenie ***wpisów*** - Jest to dodatkowy proces który ujawnia kto nie wział udziału w głosowaniu.**
 - Czasowość dowodów - Tworzenie i weryfikacja dowodu są zależne od aktualnej `tablicy wpisów`.
-    - *Jeśli ***wpis*** był by jawnie generowalną lub jawnie jednorazową częścią ***uczestnika*** to `tablica wpisów` nie ulagała by zmianie, co czyniło by przetwarzanie niezależne od stanu tej tablicy, oraz gwarantowało by pełną anonimizacje uczestników.*
+    - *Jeśli ***wpis*** był by jawnie generowalną lub jawnie jednorazową częścią ***uczestnika*** to `tablica wpisów` nie ulagała by zmianie (bo jej zawartość była by deterministyczna (tablica od razu wypełniona)), co czyniło by przetwarzanie niezależne od stanu tej tablicy, oraz gwarantowało by pełną anonimizacje uczestników.*
+- Kolizje "nullifer"'ów. - Mogą istnieć takie `c1 = H(s_1,k_1)` i `c2 = H(s_2,k_2)` że `k_1 = k_2`.

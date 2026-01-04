@@ -73,13 +73,13 @@
 </sourceLabel>
 <targetLabel class="oracle.dbtools.crest.model.design.Label">
 <site>2</site>
-<labelBounds x="445" y="183" width="107" height="30"/>
+<labelBounds x="443" y="196" width="107" height="30"/>
 <noBackgroundColor>true</noBackgroundColor>
 <noForegroundColor>true</noForegroundColor>
 </targetLabel>
 <points>
 <point x="443" y="99"/>
-<point x="445" y="219"/>
+<point x="443" y="232"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="56049B2F-66C2-A5BB-A272-8862B32BE328" otype="Relation" vid_source="2F86E315-0476-A028-6AFD-463EF71F5EF7" vid_target="F8435E24-BB81-8116-9062-FABD86BC0C30">
