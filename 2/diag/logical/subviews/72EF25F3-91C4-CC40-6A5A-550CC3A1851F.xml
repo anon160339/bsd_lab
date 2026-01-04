@@ -34,7 +34,7 @@
 - `vote_entries_root` equals the current Merkle Root out of a current set of commits.
 - the same `vote_nullifier` has not been mentioned in relation to this poll
 * `vote_previous_vote` correctly references the hash of a previously casted vote
-- `vote_value` can be associated with specific option. </comment>
+- `vote_value` can be associated with specific option. (if options occur in this poll)</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="5FE5AEAE-34A6-29EE-BC42-FEFB20244EF9" otype="Entity" vid="EE0B1E11-E36A-829A-87E3-AEF3EB1A616E">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>

@@ -8,8 +8,8 @@
 </engineerTo>
 <identifying>false</identifying>
 <nameOnSource>fits into</nameOnSource>
-<nameOnTarget>can take valuee like</nameOnTarget>
-<optionalSource>false</optionalSource>
+<nameOnTarget>can take values like</nameOnTarget>
+<optionalSource>true</optionalSource>
 <optionalTarget>true</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
 <sourceEntity>D99A17FC-09BB-0DF0-6533-197E8603A8E8</sourceEntity>
