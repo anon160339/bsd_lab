@@ -6,18 +6,19 @@ Modelowana będzie teoretyczna baza danych służąca do przeprowadzania anonimo
 
 ## Główny schemat głosowania:
 
-1. ***Użytkownik*** tworzy ***głosowanie*** z jawnymi parametrami, jawnie przypisanymi do niego ***uczestnikami*** oraz jawnymi ***załącznikami*** i jawnymi ***opcjami***, z którego ***uczestnicy*** oraz serwis mogą odczytać stały `hash głosowania` (wiążący te 3 elementy).
+1. ***Użytkownik*** tworzy ***głosowanie*** z jawnymi parametrami, jawnie przypisanymi do niego ***uczestnikami*** oraz jawnymi ***załącznikami*** i jawnymi ***opcjami***, z którego ***uczestnicy*** oraz serwis mogą odczytać stały `hash głosowania` (wiążący te elementy).
 2. ***Uczestnicy*** jawnie tworzą pojedyńcze ***wpisy*** dla danego ***głosowania***, tworzące poindeksowaną `tablice wpisów`. Każdy element tej tablicy zawiera hash wynikający z pary tajnych parametrów `s` i `k` (tak zwany "nullifier") (`hash = H(s, k)`).
     - Aby utrudnić bazie danych modyfikacje elmentów `tablicy wpisów`, można interpretować elementy tej tablicy jako bloki, gdzie każdy blok odnosi się do o 1 starszego bloku, tworząc tak zwany "blockchain". Dlatego każdy ***wpis*** powinien wiązać poprzedni zarejestrowany ***wpis***.
     - Aby utrudnić zmianę samego opisu głosowania (Nie mieć zaufania do Autora i Serwisu) każdy wpis powinien wiąząć jawny `hash głosowania` wynikający z ***głosowania***, ***załączników***, ***opcji*** i opcjonalnie ***uczstników*** *(Jest to bez znaczenie gdy strona właściciela głosowania jest stroną serwisu.) (Uporządkowany zbiór ***uczestników*** można otrzymać poprzez ich posortowanie.)*.
 3. Anonimowe źródła dostarczają do serwisu ***głosy*** zawierające w sobie dowód (zerowej wiedzy) który:
     - Wiąże jawną `wiadomość` będącą wyborem przez ***Uczestnika***.
-    - Udowadnia zawarcie takich elementów tablicy oraz takiej pary `s` i wiążącego jawnie `k`, które tworzą identyczną `tablice wpisów` jaką serwis dysponuje w danym momencie. *(`tablica wpisów` może okazać się wielka, dlatego skrócić ją można poprzez strukture* **Merkle Tree***, oraz dowodu* **Merkle Proof** *który udowadnia występowanie elemntu w tablicy o danym skrócie.)*
-    - Może wiąząć poprzedni oddany głos tworząc strukturę łańcuchową 
+    - Udowadnia zawarcie takich elementów tablicy oraz takiej pary `s` i wiążącego jawnie `k`, które tworzą identyczną `tablice wpisów` jaką serwis dysponuje w danym momencie. *(`tablica wpisów` może okazać się wielka, dlatego skrócić ją można poprzez strukture* **Merkle Tree** *, oraz dalsze dowodzenie przez* **Merkle Proof** *który udowadnia występowanie elemntu w tablicy o danym skrócie.)*
+    - Pownien wiąząć poprzedni oddany głos tworząc strukturę łańcuchową typu "blockchain", w celu utrudnienia usunięcia głosów zakceptowanych przez serwis.
 4. Jeśli dowód jest prawdziwy i powiązane z nim jawne wartości pokrywają się z aktualnym stanem `tablicy wpisów`, to ***głos*** zostaje tylko raz zapisany do bazy danych. (nie mogą istnieć 2 głosy o takim samym `k`)
     - Możliwość sprawdzenia ***głosów*** przez ***uczestników*** pozwala im skontrolować ucziwość serwisu.
 
 *Wszystkie wymienione wyżej obiekty bazo danowe są praktycznie jawnie.*
+*Do tego należy uwzględnić dodatkowe parametry jak możliwe wartości głosów, czy podpisy gwarantujące poprawne pochodzenie od uczestnika.*
 
 ### Inspiracja
 
@@ -32,8 +33,8 @@ Niemal identyczny system został zaimplementowany w narzędziu [Tornado Cash](ht
 
 Ograniczenia:
 - ***Uczestnicy*** po oddaniu ***wpisu*** powinni poczekać aż pozostali użytkownicy oddadzą swoje ***wpisy*** aby ***głosy*** nie mogły być zasocjowane z małą grupą ***wpisów*** których autorami są pojedyńczy ***uczestnicy***. 
-- Każdy dowód ***głosu*** powstaje z aktualnej `tablicy wpisów` co czyni tworzenie, weryfikacje i wstawianie dowodu (***głosu***) do bazy danych zależne od stau bazy danych. Przetwarzanie nie może dokonywać się w sposób asyncrhoniczny.
-    - Aby głosowanie było weryfikowalne przez każdą zangażowaną stronę dowód zerowej wiedzy należy powiązać z aktualnym stanem `tablicy wpisów` (np: poprzez aktualny rozmiar tablicy).
+- Każdy dowód ***głosu*** powstaje z aktualnej `tablicy wpisów` co czyni tworzenie, weryfikacje i wstawianie dowodu (***głosu***) do bazy danych zależne od stau bazy danych. Przetwarzanie nie może dokonywać się w sposób równoległy.
+    - *Aby ***głos*** był weryfikowalny przez każdą zangażowaną stronę w dowolnym momencie, dowód zerowej wiedzy należało by porównywać z stanem `tablicy wpisów` który był użyty podczas wstawiania ***głosu***. Dlatego przydatne (choć nie jest to konieczne) było by kojarzenie ***głosu*** z danym stanem `tablicy wpisów` (np: poprzez aktualny rozmiar tej tablicy).*
 
 ## Dodatkowe Obostrzenia
 
