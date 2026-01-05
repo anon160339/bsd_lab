@@ -26,14 +26,22 @@
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="384" y="6" width="110" height="93"/>
 </OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="305BA92F-0993-EF6A-55CD-159D8AC683F6" otype="Note" vid="A488FB7B-8146-E445-76A5-EB679B5DE61D">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="619" y="435" width="310" height="84"/>
+<comment>Commit is accetped if:
+- `commit_array_index` is next in sequence index
+- `commit_previous_entry` matches the hash of the previous entry (if is not the first)
+- `commit_poll` matches hash of the poll</comment>
+</OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="45BFC1A0-6EB3-38C7-CCC0-17EC087FD28B" otype="Note" vid="61181296-B316-D4E1-FD4C-F65F9123C73B">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="501" y="0" width="419" height="92"/>
+<bounds x="501" y="0" width="419" height="96"/>
 <comment>Vote is accepted if:
 - `proof_vote` with revealed `vote_*` signals forms a valid proof.
 - `vote_entries_root` equals the current Merkle Root out of a current set of commits.
 - the same `vote_nullifier` has not been mentioned in relation to this poll
-* `vote_previous_vote` correctly references the hash of a previously casted vote
+- `vote_previous_vote` matches the hash of a previously casted vote (if is not the first)
 - `vote_value` can be associated with specific option. (if options occur in this poll)</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="5FE5AEAE-34A6-29EE-BC42-FEFB20244EF9" otype="Entity" vid="EE0B1E11-E36A-829A-87E3-AEF3EB1A616E">
@@ -42,12 +50,12 @@
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="63A47D1E-2E4C-8220-6E35-139E7AAC8261" otype="Note" vid="BD379966-9A6F-4A31-FB89-3D2696F90B47">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="646" y="445" width="238" height="61"/>
+<bounds x="677" y="529" width="238" height="69"/>
 <comment>Commits form an indexed array (which can be used to calculate a Merkle Root, which is useful for ZK proofs).</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="9123F044-6D44-FA45-D67E-2160C12F0976" otype="Note" vid="610B1452-1A42-B06F-2685-30498F4682E9">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="73" y="433" width="180" height="31"/>
+<bounds x="73" y="436" width="180" height="32"/>
 <comment>Root user doesn&apos;t have a parent</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="9F730084-C7B0-8F8F-9AC5-40BB6E72F3FA" otype="Note" vid="BF9CB3A4-CFC2-81A8-5143-F47BC5907470">
@@ -62,13 +70,12 @@
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="CBD30410-0B71-A399-B5F7-420419E938B8" otype="Note" vid="AA873270-49A1-DF88-D05C-4800A8882741">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="5" y="0" width="273" height="60"/>
+<bounds x="5" y="0" width="273" height="53"/>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3342388</backgroundColor>
 <foregroundColor>-16750900</foregroundColor>
 <comment>==========================================
 ERD for Trustless and Anonymous Voting system
-Mikołaj Dywel (160339)
 ==========================================</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="D99A17FC-09BB-0DF0-6533-197E8603A8E8" otype="Entity" vid="678C45E6-C3B8-FFEE-7B53-088440EFF871">
@@ -91,7 +98,7 @@ Mikołaj Dywel (160339)
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="FCB45B8E-DE1D-C4ED-6633-BEDAB48D8EBF" otype="Entity" vid="2F86E315-0476-A028-6AFD-463EF71F5EF7">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="393" y="232" width="128" height="132"/>
+<bounds x="385" y="247" width="128" height="138"/>
 </OView>
 </objectViews>
 <connectors>
@@ -101,19 +108,19 @@ Mikołaj Dywel (160339)
 <lineWidth>1</lineWidth>
 <sourceLabel class="oracle.dbtools.crest.model.design.Label">
 <site>0</site>
-<labelBounds x="531" y="287" width="125" height="30"/>
+<labelBounds x="523" y="298" width="125" height="30"/>
 <noBackgroundColor>true</noBackgroundColor>
 <noForegroundColor>true</noForegroundColor>
 </sourceLabel>
 <targetLabel class="oracle.dbtools.crest.model.design.Label">
 <site>2</site>
-<labelBounds x="641" y="320" width="84" height="23"/>
+<labelBounds x="641" y="331" width="84" height="23"/>
 <noBackgroundColor>true</noBackgroundColor>
 <noForegroundColor>true</noForegroundColor>
 </targetLabel>
 <points>
-<point x="521" y="317"/>
-<point x="731" y="317"/>
+<point x="513" y="328"/>
+<point x="731" y="328"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="3A4C1118-A589-8DEC-BE9F-77042102E174" otype="Relation" vid_source="E6B7DF23-CC09-8022-9721-F8A9B6CFCD35" vid_target="2F86E315-0476-A028-6AFD-463EF71F5EF7">
@@ -122,19 +129,19 @@ Mikołaj Dywel (160339)
 <lineWidth>1</lineWidth>
 <sourceLabel class="oracle.dbtools.crest.model.design.Label">
 <site>0</site>
-<labelBounds x="443" y="143" width="122" height="30"/>
+<labelBounds x="439" y="143" width="122" height="30"/>
 <noBackgroundColor>true</noBackgroundColor>
 <noForegroundColor>true</noForegroundColor>
 </sourceLabel>
 <targetLabel class="oracle.dbtools.crest.model.design.Label">
 <site>2</site>
-<labelBounds x="443" y="172" width="107" height="30"/>
+<labelBounds x="439" y="187" width="107" height="30"/>
 <noBackgroundColor>true</noBackgroundColor>
 <noForegroundColor>true</noForegroundColor>
 </targetLabel>
 <points>
-<point x="443" y="99"/>
-<point x="443" y="232"/>
+<point x="439" y="99"/>
+<point x="439" y="247"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="56049B2F-66C2-A5BB-A272-8862B32BE328" otype="Relation" vid_source="2F86E315-0476-A028-6AFD-463EF71F5EF7" vid_target="F8435E24-BB81-8116-9062-FABD86BC0C30">
@@ -143,19 +150,19 @@ Mikołaj Dywel (160339)
 <lineWidth>1</lineWidth>
 <sourceLabel class="oracle.dbtools.crest.model.design.Label">
 <site>0</site>
-<labelBounds x="458" y="416" width="98" height="30"/>
+<labelBounds x="456" y="437" width="98" height="30"/>
 <noBackgroundColor>true</noBackgroundColor>
 <noForegroundColor>true</noForegroundColor>
 </sourceLabel>
 <targetLabel class="oracle.dbtools.crest.model.design.Label">
 <site>2</site>
-<labelBounds x="458" y="462" width="58" height="30"/>
+<labelBounds x="456" y="462" width="58" height="30"/>
 <noBackgroundColor>true</noBackgroundColor>
 <noForegroundColor>true</noForegroundColor>
 </targetLabel>
 <points>
-<point x="458" y="364"/>
-<point x="458" y="498"/>
+<point x="456" y="385"/>
+<point x="456" y="498"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="5B00DA77-7FAD-8B46-A6E3-208DA766FD5C" otype="Relation" vid_source="51A89A55-DDC8-E68B-DE16-C44A705CF8B8" vid_target="2F86E315-0476-A028-6AFD-463EF71F5EF7">
@@ -164,19 +171,19 @@ Mikołaj Dywel (160339)
 <lineWidth>1</lineWidth>
 <sourceLabel class="oracle.dbtools.crest.model.design.Label">
 <site>0</site>
-<labelBounds x="228" y="268" width="70" height="30"/>
+<labelBounds x="228" y="286" width="70" height="30"/>
 <noBackgroundColor>true</noBackgroundColor>
 <noForegroundColor>true</noForegroundColor>
 </sourceLabel>
 <targetLabel class="oracle.dbtools.crest.model.design.Label">
 <site>2</site>
-<labelBounds x="305" y="301" width="82" height="30"/>
+<labelBounds x="297" y="319" width="82" height="30"/>
 <noBackgroundColor>true</noBackgroundColor>
 <noForegroundColor>true</noForegroundColor>
 </targetLabel>
 <points>
-<point x="218" y="298"/>
-<point x="393" y="298"/>
+<point x="218" y="316"/>
+<point x="385" y="316"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="903481A9-6458-92B0-3525-B89650BB6148" otype="Relation" vid_source="EE0B1E11-E36A-829A-87E3-AEF3EB1A616E" vid_target="51A89A55-DDC8-E68B-DE16-C44A705CF8B8">
@@ -272,19 +279,19 @@ Mikołaj Dywel (160339)
 <lineWidth>1</lineWidth>
 <sourceLabel class="oracle.dbtools.crest.model.design.Label">
 <site>0</site>
-<labelBounds x="573" y="193" width="107" height="30"/>
+<labelBounds x="573" y="196" width="107" height="30"/>
 <noBackgroundColor>true</noBackgroundColor>
 <noForegroundColor>true</noForegroundColor>
 </sourceLabel>
 <targetLabel class="oracle.dbtools.crest.model.design.Label">
 <site>2</site>
-<labelBounds x="531" y="268" width="71" height="30"/>
+<labelBounds x="523" y="283" width="71" height="30"/>
 <noBackgroundColor>true</noBackgroundColor>
 <noForegroundColor>true</noForegroundColor>
 </targetLabel>
 <points>
-<point x="686" y="193"/>
-<point x="521" y="268"/>
+<point x="686" y="196"/>
+<point x="513" y="283"/>
 </points>
 </Connector>
 </connectors>
