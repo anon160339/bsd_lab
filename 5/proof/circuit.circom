@@ -47,6 +47,7 @@ template MainCircuit(merkle_levels_count) {
     c1.in[0] <== vote;
     c1.in[1] <== 69;
     c1.out === 0;       //this makes sure vote cannot be 69 (as an example)
+    //circuits source code: https://github.com/iden3/circomlib/blob/master/circuits/comparators.circom
     //================================================================
 
     //output vote   (copy)
