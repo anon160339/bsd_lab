@@ -3,8 +3,13 @@
     const fs = require('fs');
 
     const proofInput = {
-        a: 6,
-        b: 7
+        vote: 69,
+        s: 7,
+        k: 3,
+        entry_index: 3,
+        merkle_leafs: [0,0,0,0,0,0,0,0,0],
+        merkle_root: 33,
+        previous_vote: 11
     };
     const { proof, publicSignals } = await snarkjs.groth16.fullProve(
     proofInput,

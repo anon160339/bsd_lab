@@ -9,6 +9,8 @@ pragma circom 2.0.0;
 //include "circomlib/circuits/bitify.circom";
 //include "circomlib/circuits/comparators.circom";
 
+//Poseidon Hash recommended
+
 //================================================================
 //Operations
 
@@ -17,15 +19,42 @@ pragma circom 2.0.0;
 //================================================================
 //Main
 
-template MainCircuit() {
-    //input
-    signal input a;
-    signal input b;
-    signal output out;
+template MainCircuit(merkle_levels_count) {
+    //input vote value (bind)
+    signal input vote;
+    
+    //input entry
+    signal input s;
+    signal input k;
 
-    //Addition `a + b`;
-    out <== a + b;
+    //input DB (shortcut via Merkle Proof)
+    signal input entry_index;
+    signal input merkle_leafs[merkle_levels_count - 1];
+    signal input merkle_root;   //(optional but I will use it to know what to output on vote_entries_root)
+    //constrain: merkle_root === MerkleProof(entry, leafs);
 
+    //input previous_vote (bind)
+    signal input previous_vote;
+    
+    //================================================================
+    //
+    // Here constrains/zk-processing should be put 
+    //
+    //================================================================
+
+    //output vote   (copy)
+    signal output vote_value <== vote;
+
+    //output
+    signal output vote_entries_root <== merkle_root;
+
+    //output nullifier
+    signal output vote_nullifier <== k;
+
+    //output previous vote  (copy)
+    signal output vote_previous_vote <== previous_vote;
 }
 
-component main = MainCircuit();
+// Max number of voters: 2 ** 10 = 1024
+component main = MainCircuit(10);
+
