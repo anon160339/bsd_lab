@@ -7,7 +7,7 @@ pragma circom 2.0.0;
 //Requirements
 
 //include "circomlib/circuits/bitify.circom";
-//include "circomlib/circuits/comparators.circom";
+include "circomlib/circuits/comparators.circom";    //IsZero --> IsEqual
 
 //Poseidon Hash recommended
 
@@ -40,6 +40,13 @@ template MainCircuit(merkle_levels_count) {
     //
     // Here constrains/zk-processing should be put 
     //
+    //================================================================
+    //================================================================
+    //example constrain (69 is illegal)
+    component c1 = IsEqual();               //circuit taken from circomlib
+    c1.in[0] <== vote;
+    c1.in[1] <== 69;
+    c1.out === 0;       //this makes sure vote cannot be 69 (as an example)
     //================================================================
 
     //output vote   (copy)
