@@ -10,6 +10,7 @@ Krok 2. Diagram związków encji (w postaci pliku graficznego)
 
 Krok 3. Diagram relacji (w postaci pliku graficznego)
 - [ekursy](https://ekursy.put.poznan.pl/mod/assign/view.php?id=603136)
+- ![Diagram związków encji](/3/preview.png)
 
 Krok 4. Skrypt z poleceniami DDL
 - [ekursy](https://ekursy.put.poznan.pl/mod/assign/view.php?id=603141)

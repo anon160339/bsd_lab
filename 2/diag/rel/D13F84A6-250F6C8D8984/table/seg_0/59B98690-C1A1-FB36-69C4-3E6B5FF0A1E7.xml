@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="59B98690-C1A1-FB36-69C4-3E6B5FF0A1E7" name="attachment">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 21:34:15 UTC</createdTime>
+<generatorID>22CB2E59-45EC-CA14-F092-80C310C6B7EB</generatorID>
+<ownerDesignName>diag</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="file_hash" id="D1A9E205-66BB-2123-60C4-8D4FB9DC769E">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 21:34:16 UTC</createdTime>
+<generatorID>7BBC6272-FC47-9058-4997-F23B69EE67D4</generatorID>
+<ownerDesignName>diag</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>32 BYTE</dataTypeSize>
+<ownDataTypeParameters>32 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="file_address" id="5098FEF2-793F-B894-E48F-615C72E7D9C1">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 21:34:16 UTC</createdTime>
+<generatorID>AD650B61-D216-2B3D-CB65-0C770DD1EF71</generatorID>
+<ownerDesignName>diag</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<ownDataTypeParameters>250,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sign_file" id="96010B8C-2704-EC3F-32E9-0453A339E3D1">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 21:34:16 UTC</createdTime>
+<generatorID>0FE7829D-2A1A-5BA7-196E-8DABE5959452</generatorID>
+<ownerDesignName>diag</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>64 BYTE</dataTypeSize>
+<ownDataTypeParameters>64 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="user_info_public_key" id="BCE087B5-03D3-7F13-62AD-298CEAFB7ACF">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 21:34:16 UTC</createdTime>
+<generatorID>06524E0A-1277-EA43-D5BA-194E215E8419</generatorID>
+<ownerDesignName>diag</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>33 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1CE310D0-A2C1-C649-4F12-8BDDE2D1437F" referredColumn="BCDD442B-71C7-CC06-8519-AA2FFA631711"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="51E63B67-81EB-DA5B-AA2C-F34166AA9B45" name="attachment_PK">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 21:34:16 UTC</createdTime>
+<generatorID>29DADCED-B73D-0630-B0D6-899A65834A93</generatorID>
+<ownerDesignName>diag</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D1A9E205-66BB-2123-60C4-8D4FB9DC769E"/>
+<colUsage columnID="5098FEF2-793F-B894-E48F-615C72E7D9C1"/>
+<colUsage columnID="BCE087B5-03D3-7F13-62AD-298CEAFB7ACF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F2298673-9C9C-C7F7-1FE9-4464337EE168" name="attachment_user_FK">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 21:34:16 UTC</createdTime>
+<generatorID>CB45A0BA-767A-4A7B-C793-F8B5C5C36A33</generatorID>
+<ownerDesignName>diag</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BCE087B5-03D3-7F13-62AD-298CEAFB7ACF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

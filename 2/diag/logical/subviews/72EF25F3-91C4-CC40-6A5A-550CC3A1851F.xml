@@ -157,7 +157,7 @@ ERD for Trustless and Anonymous Voting system
 </sourceLabel>
 <targetLabel class="oracle.dbtools.crest.model.design.Label">
 <site>2</site>
-<labelBounds x="456" y="462" width="61" height="30"/>
+<labelBounds x="456" y="454" width="61" height="30"/>
 <noBackgroundColor>true</noBackgroundColor>
 <noForegroundColor>true</noForegroundColor>
 </targetLabel>
