@@ -15,16 +15,6 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="file_id" id="5B79D48E-C2A2-BBEB-260C-944563B0D7BB">
-<createdBy>kebabmaster</createdBy>
-<createdTime>2026-01-04 20:26:58 UTC</createdTime>
-<ownerDesignName>diag</ownerDesignName>
-<engineerTo>
-<item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
-</engineerTo>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="file_hash" id="7BBC6272-FC47-9058-4997-F23B69EE67D4">
 <createdBy>kebabmaster</createdBy>
 <createdTime>2026-01-04 20:39:43 UTC</createdTime>
@@ -34,7 +24,9 @@
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>32 BYTE</dataTypeSize>
+<ownDataTypeParameters>32 BYTE,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="file_address" id="AD650B61-D216-2B3D-CB65-0C770DD1EF71">
 <createdBy>kebabmaster</createdBy>
@@ -43,8 +35,11 @@
 <engineerTo>
 <item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
 </engineerTo>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<ownDataTypeParameters>250,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="sign_file" id="0FE7829D-2A1A-5BA7-196E-8DABE5959452">
 <createdBy>kebabmaster</createdBy>
@@ -53,8 +48,11 @@
 <engineerTo>
 <item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
 </engineerTo>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>64 BYTE</dataTypeSize>
+<ownDataTypeParameters>64 BYTE,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 </Entity>

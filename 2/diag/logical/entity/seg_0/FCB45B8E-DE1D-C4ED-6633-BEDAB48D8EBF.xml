@@ -22,9 +22,11 @@
 <engineerTo>
 <item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="info_poll_start" id="B157E5D6-A920-7C24-9523-493AEC208CDE">
 <createdBy>kebabmaster</createdBy>
@@ -34,7 +36,9 @@
 <item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="info_poll_end" id="59D507BC-B153-64AE-F08C-A7C93ED08079">
@@ -45,7 +49,9 @@
 <item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT046</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="sign_poll" id="4994C770-7CF7-DAF5-0BAB-E3D1BBB61D89">
@@ -56,8 +62,25 @@
 <item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>64</dataTypeSize>
+<ownDataTypeParameters>64,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="28C0F0E3-70B7-E386-2D0D-56DA7B20651E" name="poll PK">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 13:49:17 UTC</createdTime>
+<ownerDesignName>diag</ownerDesignName>
+<engineerTo>
+<item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>621F87E7-919C-154C-3104-C2AF5F101CB0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

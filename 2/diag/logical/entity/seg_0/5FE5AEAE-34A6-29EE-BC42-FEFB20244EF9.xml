@@ -23,7 +23,9 @@
 <item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="commit_hash" id="C0A23053-604A-3201-4FB7-CCD507BEEB08">
@@ -34,8 +36,11 @@
 <item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>32 BYTE</dataTypeSize>
+<ownDataTypeParameters>32 BYTE,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="commit_previous_entry" id="545665F7-85FA-D443-8B5B-3CBD12BF3A73">
 <createdBy>kebabmaster</createdBy>
@@ -45,8 +50,11 @@
 <item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>32 BYTE</dataTypeSize>
+<ownDataTypeParameters>32 BYTE,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="commit_poll" id="90CBE23F-F1DC-A4C2-42D5-7A4901FEBD4A">
 <createdBy>kebabmaster</createdBy>
@@ -56,8 +64,11 @@
 <item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>32 BYTE</dataTypeSize>
+<ownDataTypeParameters>32 BYTE,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="sign_commit" id="756AFF21-F624-B616-0F50-D89C93A446E8">
 <createdBy>kebabmaster</createdBy>
@@ -67,7 +78,25 @@
 <item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>64 BYTE</dataTypeSize>
+<ownDataTypeParameters>64 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="info_name" id="2BC084C4-EEFC-FA83-C539-166A3B6861A4">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 13:58:00 UTC</createdTime>
+<generatorID>17F2FE03-6624-B00D-1980-5A5DBF2152E3</generatorID>
+<ownerDesignName>diag</ownerDesignName>
+<engineerTo>
+<item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
+</engineerTo>
+<referedAttribute>621F87E7-919C-154C-3104-C2AF5F101CB0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>

@@ -22,8 +22,11 @@
 <engineerTo>
 <item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
 </engineerTo>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>32 BYTE</dataTypeSize>
+<ownDataTypeParameters>32 BYTE,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="vote_entries_root" id="B4489491-F402-0BEA-53DF-6FF9E4438646">
 <createdBy>kebabmaster</createdBy>
@@ -32,8 +35,11 @@
 <engineerTo>
 <item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
 </engineerTo>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>32 BYTE</dataTypeSize>
+<ownDataTypeParameters>32 BYTE,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="vote_nullifier" id="BEFCF555-1DBF-C615-8701-3CB28F5AF594">
 <createdBy>kebabmaster</createdBy>
@@ -42,8 +48,11 @@
 <engineerTo>
 <item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
 </engineerTo>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>32 BYTE</dataTypeSize>
+<ownDataTypeParameters>32 BYTE,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="vote_previous_vote" id="E17D3403-5685-1CD4-7235-7576336AC061">
 <createdBy>kebabmaster</createdBy>
@@ -53,8 +62,11 @@
 <item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>32 BYTE</dataTypeSize>
+<ownDataTypeParameters>32 BYTE,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="proof_vote" id="11202899-C78E-DA53-5239-8642644DFCC5">
 <createdBy>kebabmaster</createdBy>
@@ -63,7 +75,24 @@
 <engineerTo>
 <item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
 </engineerTo>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>47823B89-BECE-2D4A-B641-EE3BE6149078</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="info_name" id="BF134FB0-7D20-F4E0-09E3-32333AA95E53">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 13:58:00 UTC</createdTime>
+<generatorID>F69629B7-DEF9-5C42-D25D-423E63FBD071</generatorID>
+<ownerDesignName>diag</ownerDesignName>
+<engineerTo>
+<item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
+</engineerTo>
+<referedAttribute>621F87E7-919C-154C-3104-C2AF5F101CB0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>

@@ -24,9 +24,9 @@
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>65</dataTypeSize>
-<ownDataTypeParameters>65,,</ownDataTypeParameters>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>33 BYTE</dataTypeSize>
+<ownDataTypeParameters>33 BYTE,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="info_permissions" id="F25ED9E1-48C4-B58D-44FE-26AC90CA7AC4">
 <createdBy>kebabmaster</createdBy>
@@ -37,7 +37,9 @@
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT034</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="info_name" id="2BE6C4BC-E6C9-80C6-DEA2-31CF758218A4">
 <createdBy>kebabmaster</createdBy>
@@ -46,8 +48,11 @@
 <engineerTo>
 <item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
 </engineerTo>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="author_sign_info" id="C3842E6C-46CF-6A12-6844-D730F9AB6C3C">
 <createdBy>kebabmaster</createdBy>
@@ -57,8 +62,11 @@
 <item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>64 BYTE</dataTypeSize>
+<ownDataTypeParameters>64 BYTE,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 </Entity>
