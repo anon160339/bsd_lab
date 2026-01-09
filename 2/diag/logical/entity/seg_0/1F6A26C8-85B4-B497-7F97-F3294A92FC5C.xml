@@ -4,7 +4,7 @@
 <createdTime>2026-01-04 20:20:06 UTC</createdTime>
 <ownerDesignName>diag</ownerDesignName>
 <engineerTo>
-<item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
+<item key="258CED46-79E6-8874-83A6-B3356913A0CE" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -20,7 +20,7 @@
 <createdTime>2026-01-04 20:21:25 UTC</createdTime>
 <ownerDesignName>diag</ownerDesignName>
 <engineerTo>
-<item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
+<item key="258CED46-79E6-8874-83A6-B3356913A0CE" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -33,7 +33,7 @@
 <createdTime>2026-01-04 20:21:41 UTC</createdTime>
 <ownerDesignName>diag</ownerDesignName>
 <engineerTo>
-<item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
+<item key="258CED46-79E6-8874-83A6-B3356913A0CE" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -47,7 +47,7 @@
 <createdTime>2026-01-04 20:45:25 UTC</createdTime>
 <ownerDesignName>diag</ownerDesignName>
 <engineerTo>
-<item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
+<item key="258CED46-79E6-8874-83A6-B3356913A0CE" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -62,29 +62,28 @@
 <generatorID>56049B2F-66C2-A5BB-A272-8862B32BE328</generatorID>
 <ownerDesignName>diag</ownerDesignName>
 <engineerTo>
-<item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
+<item key="258CED46-79E6-8874-83A6-B3356913A0CE" value="true"/>
 </engineerTo>
 <referedAttribute>6DF8A66A-9B14-BD41-0917-74410BD8AEA5</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
 <dataTypeSize>33 BYTE</dataTypeSize>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>33 BYTE,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="info_public_key1" id="461F6E56-094F-134C-39E7-46ECCD771E37">
+<Attribute name="info_name" id="A5002DEC-9554-5281-88B8-B87CC2A01355">
 <createdBy>kebabmaster</createdBy>
-<createdTime>2026-01-09 20:22:59 UTC</createdTime>
-<generatorID>C7AEBCB3-06B6-F692-0286-91215CC78C8C</generatorID>
+<createdTime>2026-01-09 21:05:33 UTC</createdTime>
+<generatorID>56049B2F-66C2-A5BB-A272-8862B32BE328</generatorID>
 <ownerDesignName>diag</ownerDesignName>
 <engineerTo>
-<item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
+<item key="258CED46-79E6-8874-83A6-B3356913A0CE" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<referedAttribute>E91E0ABE-37D3-6FF9-87B8-A5EC7837BFAA</referedAttribute>
+<referedAttribute>621F87E7-919C-154C-3104-C2AF5F101CB0</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
-<dataTypeSize>33 BYTE</dataTypeSize>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
@@ -93,13 +92,15 @@
 <createdBy>kebabmaster</createdBy>
 <createdTime>2026-01-09 20:25:41 UTC</createdTime>
 <ownerDesignName>diag</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
+<item key="258CED46-79E6-8874-83A6-B3356913A0CE" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>92E0F433-E0BA-1D9A-73D4-7D971A8AC971</attributeRef>
 <attributeRef>962C198F-7417-0664-732A-0BB598F17EB0</attributeRef>
+<attributeRef>A5002DEC-9554-5281-88B8-B87CC2A01355</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

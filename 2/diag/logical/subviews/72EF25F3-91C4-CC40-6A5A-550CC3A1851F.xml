@@ -109,13 +109,13 @@ ERD for Trustless and Anonymous Voting system
 <lineWidth>1</lineWidth>
 <sourceLabel class="oracle.dbtools.crest.model.design.Label">
 <site>0</site>
-<labelBounds x="523" y="298" width="125" height="30"/>
+<labelBounds x="523" y="296" width="127" height="32"/>
 <noBackgroundColor>true</noBackgroundColor>
 <noForegroundColor>true</noForegroundColor>
 </sourceLabel>
 <targetLabel class="oracle.dbtools.crest.model.design.Label">
 <site>2</site>
-<labelBounds x="641" y="331" width="84" height="23"/>
+<labelBounds x="674" y="331" width="51" height="16"/>
 <noBackgroundColor>true</noBackgroundColor>
 <noForegroundColor>true</noForegroundColor>
 </targetLabel>
@@ -208,25 +208,25 @@ ERD for Trustless and Anonymous Voting system
 <point x="210" y="401"/>
 </points>
 </Connector>
-<Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="C7AEBCB3-06B6-F692-0286-91215CC78C8C" otype="Relation" vid_source="678C45E6-C3B8-FFEE-7B53-088440EFF871" vid_target="F8435E24-BB81-8116-9062-FABD86BC0C30">
+<Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="B6E8E2BD-5163-DFEF-4072-909658FCAFE5" otype="Relation" vid_source="F8435E24-BB81-8116-9062-FABD86BC0C30" vid_target="678C45E6-C3B8-FFEE-7B53-088440EFF871">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <sourceLabel class="oracle.dbtools.crest.model.design.Label">
 <site>0</site>
-<labelBounds x="708" y="248" width="52" height="19"/>
+<labelBounds x="495" y="456" width="112" height="36"/>
 <noBackgroundColor>true</noBackgroundColor>
 <noForegroundColor>true</noForegroundColor>
 </sourceLabel>
 <targetLabel class="oracle.dbtools.crest.model.design.Label">
 <site>2</site>
-<labelBounds x="495" y="446" width="111" height="46"/>
+<labelBounds x="723" y="265" width="44" height="30"/>
 <noBackgroundColor>true</noBackgroundColor>
 <noForegroundColor>true</noForegroundColor>
 </targetLabel>
 <points>
-<point x="708" y="223"/>
 <point x="495" y="498"/>
+<point x="723" y="223"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="CB45A0BA-767A-4A7B-C793-F8B5C5C36A33" otype="Relation" vid_source="E6B7DF23-CC09-8022-9721-F8A9B6CFCD35" vid_target="51A89A55-DDC8-E68B-DE16-C44A705CF8B8">

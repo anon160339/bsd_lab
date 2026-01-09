@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F487987B-2D5D-95ED-CF71-F142860251FA" name="poll">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 21:15:16 UTC</createdTime>
+<generatorID>FCB45B8E-DE1D-C4ED-6633-BEDAB48D8EBF</generatorID>
+<ownerDesignName>diag</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="info_name" id="19CE6683-E44C-DA1D-C4C6-FECCDFE0AE38">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 21:15:16 UTC</createdTime>
+<generatorID>621F87E7-919C-154C-3104-C2AF5F101CB0</generatorID>
+<ownerDesignName>diag</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="info_poll_start" id="70CD7EB3-F981-A97A-E835-586D5269D8C5">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 21:15:16 UTC</createdTime>
+<generatorID>B157E5D6-A920-7C24-9523-493AEC208CDE</generatorID>
+<ownerDesignName>diag</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="info_poll_end" id="93C76FC2-94AB-7CC6-94B9-FCCC95E58A9C">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 21:15:16 UTC</createdTime>
+<generatorID>59D507BC-B153-64AE-F08C-A7C93ED08079</generatorID>
+<ownerDesignName>diag</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT046</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sign_poll" id="2660B304-E62F-9773-81E3-4A56456668D1">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 21:15:16 UTC</createdTime>
+<generatorID>4994C770-7CF7-DAF5-0BAB-E3D1BBB61D89</generatorID>
+<ownerDesignName>diag</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>64</dataTypeSize>
+<ownDataTypeParameters>64,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="user_info_public_key" id="89B471BE-9F0F-6B4B-EF31-E728F59B7774">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 21:15:16 UTC</createdTime>
+<generatorID>6DF8A66A-9B14-BD41-0917-74410BD8AEA5</generatorID>
+<ownerDesignName>diag</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>33 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7EAB4D41-BC42-9626-8D21-3E2404EE2D0E" referredColumn="A575D973-8A14-C4CF-9DB6-29A87E1093BA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A5DDA666-927F-F77B-62C8-A5938D3C2C7B" name="poll_PK">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 21:15:16 UTC</createdTime>
+<generatorID>28C0F0E3-70B7-E386-2D0D-56DA7B20651E</generatorID>
+<ownerDesignName>diag</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="89B471BE-9F0F-6B4B-EF31-E728F59B7774"/>
+<colUsage columnID="19CE6683-E44C-DA1D-C4C6-FECCDFE0AE38"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EE200951-4E2B-E4BD-3798-D3C893800BD6" name="poll_user_FK">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 21:15:16 UTC</createdTime>
+<generatorID>5B00DA77-7FAD-8B46-A6E3-208DA766FD5C</generatorID>
+<ownerDesignName>diag</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="89B471BE-9F0F-6B4B-EF31-E728F59B7774"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

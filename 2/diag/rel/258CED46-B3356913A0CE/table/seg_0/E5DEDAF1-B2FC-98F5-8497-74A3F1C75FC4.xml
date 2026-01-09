@@ -1,0 +1,163 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E5DEDAF1-B2FC-98F5-8497-74A3F1C75FC4" name="member">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 21:15:16 UTC</createdTime>
+<generatorID>5FE5AEAE-34A6-29EE-BC42-FEFB20244EF9</generatorID>
+<ownerDesignName>diag</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="commit_array_index" id="18BEA884-7707-1A07-D0C3-21D43AFF5395">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 21:15:16 UTC</createdTime>
+<generatorID>C7E97C23-F99B-C145-1F59-C3AD3F7157C6</generatorID>
+<ownerDesignName>diag</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="commit_hash" id="64A9026F-890D-D969-DD4F-19E383F4A65F">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 21:15:16 UTC</createdTime>
+<generatorID>C0A23053-604A-3201-4FB7-CCD507BEEB08</generatorID>
+<ownerDesignName>diag</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>32 BYTE</dataTypeSize>
+<ownDataTypeParameters>32 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="commit_previous_entry" id="0BA5FD4C-E0E2-51D7-9811-FC26F53C4359">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 21:15:16 UTC</createdTime>
+<generatorID>545665F7-85FA-D443-8B5B-3CBD12BF3A73</generatorID>
+<ownerDesignName>diag</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>32 BYTE</dataTypeSize>
+<ownDataTypeParameters>32 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="commit_poll" id="29C47FDD-507B-86EF-063F-1F2764837400">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 21:15:16 UTC</createdTime>
+<generatorID>90CBE23F-F1DC-A4C2-42D5-7A4901FEBD4A</generatorID>
+<ownerDesignName>diag</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>32 BYTE</dataTypeSize>
+<ownDataTypeParameters>32 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sign_commit" id="83026E90-98D9-648C-D808-8F990FEE8C1F">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 21:15:16 UTC</createdTime>
+<generatorID>756AFF21-F624-B616-0F50-D89C93A446E8</generatorID>
+<ownerDesignName>diag</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>64 BYTE</dataTypeSize>
+<ownDataTypeParameters>64 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="poll_user_info_public_key" id="1ED903BD-48F6-6276-26D0-B3D59C5E3C70">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 21:15:16 UTC</createdTime>
+<generatorID>59729E59-28B3-572D-19C6-CEEF09304F6C</generatorID>
+<ownerDesignName>diag</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>33 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EADB342F-1B16-E5FD-55DE-02EEDF022A4B" referredColumn="89B471BE-9F0F-6B4B-EF31-E728F59B7774"/>
+</associations>
+</Column>
+<Column name="user_info_public_key" id="5E17981B-E3E4-B777-1147-D67A86935D8D">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 21:15:16 UTC</createdTime>
+<generatorID>C27B6211-1B23-1A9A-5221-17EB6B290CBF</generatorID>
+<ownerDesignName>diag</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>33 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="37A5AF4E-E19C-39AE-A5C7-994C3D56EB25" referredColumn="A575D973-8A14-C4CF-9DB6-29A87E1093BA"/>
+</associations>
+</Column>
+<Column name="poll_info_name" id="D80013F1-3972-823E-A7F5-6D7EE1466E92">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 21:15:16 UTC</createdTime>
+<generatorID>9CAF5B59-B1EB-1EBE-47FC-8AE1598F6426</generatorID>
+<ownerDesignName>diag</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EADB342F-1B16-E5FD-55DE-02EEDF022A4B" referredColumn="19CE6683-E44C-DA1D-C4C6-FECCDFE0AE38"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="11FEC2FF-785C-1ED3-EE05-B9A5DE7675FF" name="member_PK">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 21:15:16 UTC</createdTime>
+<generatorID>2D456E65-D067-9E48-1652-C7F08A2B9DEE</generatorID>
+<ownerDesignName>diag</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5E17981B-E3E4-B777-1147-D67A86935D8D"/>
+<colUsage columnID="1ED903BD-48F6-6276-26D0-B3D59C5E3C70"/>
+<colUsage columnID="D80013F1-3972-823E-A7F5-6D7EE1466E92"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2462B594-D3D1-BD88-2139-A6C3F63C06C1" name="member_poll_FK">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 21:15:16 UTC</createdTime>
+<generatorID>17F2FE03-6624-B00D-1980-5A5DBF2152E3</generatorID>
+<ownerDesignName>diag</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1ED903BD-48F6-6276-26D0-B3D59C5E3C70"/>
+<colUsage columnID="D80013F1-3972-823E-A7F5-6D7EE1466E92"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E979DC84-A8DB-74CF-87A8-3CD4AC4404C7" name="member_user_FK">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 21:15:16 UTC</createdTime>
+<generatorID>903481A9-6458-92B0-3525-B89650BB6148</generatorID>
+<ownerDesignName>diag</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5E17981B-E3E4-B777-1147-D67A86935D8D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

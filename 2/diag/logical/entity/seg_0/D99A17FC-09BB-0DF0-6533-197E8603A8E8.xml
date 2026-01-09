@@ -4,7 +4,7 @@
 <createdTime>2026-01-04 19:55:14 UTC</createdTime>
 <ownerDesignName>diag</ownerDesignName>
 <engineerTo>
-<item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
+<item key="258CED46-79E6-8874-83A6-B3356913A0CE" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -20,7 +20,7 @@
 <createdTime>2026-01-04 20:29:16 UTC</createdTime>
 <ownerDesignName>diag</ownerDesignName>
 <engineerTo>
-<item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
+<item key="258CED46-79E6-8874-83A6-B3356913A0CE" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -33,7 +33,7 @@
 <createdTime>2026-01-04 20:31:07 UTC</createdTime>
 <ownerDesignName>diag</ownerDesignName>
 <engineerTo>
-<item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
+<item key="258CED46-79E6-8874-83A6-B3356913A0CE" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -46,7 +46,7 @@
 <createdTime>2026-01-04 20:54:11 UTC</createdTime>
 <ownerDesignName>diag</ownerDesignName>
 <engineerTo>
-<item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
+<item key="258CED46-79E6-8874-83A6-B3356913A0CE" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -59,7 +59,7 @@
 <createdTime>2026-01-04 21:37:52 UTC</createdTime>
 <ownerDesignName>diag</ownerDesignName>
 <engineerTo>
-<item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
+<item key="258CED46-79E6-8874-83A6-B3356913A0CE" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -73,7 +73,7 @@
 <createdTime>2026-01-04 20:31:49 UTC</createdTime>
 <ownerDesignName>diag</ownerDesignName>
 <engineerTo>
-<item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
+<item key="258CED46-79E6-8874-83A6-B3356913A0CE" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -86,22 +86,37 @@
 <generatorID>F69629B7-DEF9-5C42-D25D-423E63FBD071</generatorID>
 <ownerDesignName>diag</ownerDesignName>
 <engineerTo>
-<item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
+<item key="258CED46-79E6-8874-83A6-B3356913A0CE" value="true"/>
 </engineerTo>
 <referedAttribute>6DF8A66A-9B14-BD41-0917-74410BD8AEA5</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
 <dataTypeSize>33 BYTE</dataTypeSize>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>33 BYTE,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="name" id="F9475033-F121-168E-CDD3-663D326C0482">
+<Attribute name="info_name1" id="3DCF483C-9ADD-874B-3464-4B1988EACB05">
 <createdBy>kebabmaster</createdBy>
-<createdTime>2026-01-09 20:25:42 UTC</createdTime>
-<generatorID>C7AEBCB3-06B6-F692-0286-91215CC78C8C</generatorID>
+<createdTime>2026-01-09 21:05:33 UTC</createdTime>
+<generatorID>F69629B7-DEF9-5C42-D25D-423E63FBD071</generatorID>
 <ownerDesignName>diag</ownerDesignName>
 <engineerTo>
-<item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
+<item key="258CED46-79E6-8874-83A6-B3356913A0CE" value="true"/>
+</engineerTo>
+<referedAttribute>621F87E7-919C-154C-3104-C2AF5F101CB0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="5DB91F61-6ECC-A5BE-C621-EAFB38BB9FA0">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 21:17:44 UTC</createdTime>
+<generatorID>B6E8E2BD-5163-DFEF-4072-909658FCAFE5</generatorID>
+<ownerDesignName>diag</ownerDesignName>
+<engineerTo>
+<item key="258CED46-79E6-8874-83A6-B3356913A0CE" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>92E0F433-E0BA-1D9A-73D4-7D971A8AC971</referedAttribute>
@@ -111,13 +126,13 @@
 <dataTypeSize>50</dataTypeSize>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="info_public_key1" id="85AC8E66-C481-8621-A6C6-A19F99721CCC">
+<Attribute name="info_public_key1" id="22010A2C-118B-6B49-15F8-5B3FA2CBED73">
 <createdBy>kebabmaster</createdBy>
-<createdTime>2026-01-09 20:26:04 UTC</createdTime>
-<generatorID>C7AEBCB3-06B6-F692-0286-91215CC78C8C</generatorID>
+<createdTime>2026-01-09 21:17:44 UTC</createdTime>
+<generatorID>B6E8E2BD-5163-DFEF-4072-909658FCAFE5</generatorID>
 <ownerDesignName>diag</ownerDesignName>
 <engineerTo>
-<item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
+<item key="258CED46-79E6-8874-83A6-B3356913A0CE" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>962C198F-7417-0664-732A-0BB598F17EB0</referedAttribute>
@@ -125,6 +140,22 @@
 <use>1</use>
 <logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
 <dataTypeSize>33 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="info_name" id="BB1979AE-9955-B296-EDEB-6F9CD3ABC88C">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 21:17:44 UTC</createdTime>
+<generatorID>B6E8E2BD-5163-DFEF-4072-909658FCAFE5</generatorID>
+<ownerDesignName>diag</ownerDesignName>
+<engineerTo>
+<item key="258CED46-79E6-8874-83A6-B3356913A0CE" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>A5002DEC-9554-5281-88B8-B87CC2A01355</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
@@ -135,11 +166,13 @@
 <ownerDesignName>diag</ownerDesignName>
 <shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="false"/>
+<item key="258CED46-79E6-8874-83A6-B3356913A0CE" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
+<attributeRef>BEFCF555-1DBF-C615-8701-3CB28F5AF594</attributeRef>
 <attributeRef>E91E0ABE-37D3-6FF9-87B8-A5EC7837BFAA</attributeRef>
+<attributeRef>3DCF483C-9ADD-874B-3464-4B1988EACB05</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

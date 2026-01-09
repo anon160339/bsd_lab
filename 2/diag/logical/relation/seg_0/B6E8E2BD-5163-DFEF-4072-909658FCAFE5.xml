@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_16" directorySegmentName="seg_0" id="B6E8E2BD-5163-DFEF-4072-909658FCAFE5">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 21:17:44 UTC</createdTime>
+<ownerDesignName>diag</ownerDesignName>
+<engineerTo>
+<item key="258CED46-79E6-8874-83A6-B3356913A0CE" value="true"/>
+</engineerTo>
+<sourcePk>A103C22F-2AB8-1646-7C8D-7BE86968AF3E</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>can take values like</nameOnSource>
+<nameOnTarget>fits into</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>1F6A26C8-85B4-B497-7F97-F3294A92FC5C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D99A17FC-09BB-0DF0-6533-197E8603A8E8</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

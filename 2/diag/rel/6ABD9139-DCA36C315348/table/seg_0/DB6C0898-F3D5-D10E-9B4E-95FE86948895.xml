@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DB6C0898-F3D5-D10E-9B4E-95FE86948895" name="Relation_1">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 20:59:57 UTC</createdTime>
+<ownerDesignName>diag</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="attachment_file_hash" id="4DBCA4FB-7F24-CEEB-BCE8-E2737C65DCE0">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 20:59:57 UTC</createdTime>
+<ownerDesignName>diag</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>32 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="75584A82-74FC-7AAD-B919-05D443BF01C6" referredColumn="23368A1D-91A3-9D6B-374D-14F17EF6F5A2"/>
+</associations>
+</Column>
+<Column name="attachment_file_address" id="ADAED893-AC66-644A-D8D5-CC6FFA54EBBD">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 20:59:57 UTC</createdTime>
+<ownerDesignName>diag</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="75584A82-74FC-7AAD-B919-05D443BF01C6" referredColumn="7B35035E-1D24-4C0C-8691-A3658735B3D5"/>
+</associations>
+</Column>
+<Column name="attachment_info_public_key" id="A853F540-E4C9-E7A1-54DA-8F3DCDFC3E3D">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 20:59:57 UTC</createdTime>
+<ownerDesignName>diag</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>33 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="75584A82-74FC-7AAD-B919-05D443BF01C6" referredColumn="5920FB2F-0656-9564-D7A5-C86EAB5510C9"/>
+</associations>
+</Column>
+<Column name="poll_info_public_key" id="6E80C538-A552-4A5D-4E14-8508EB20C0E2">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 20:59:57 UTC</createdTime>
+<ownerDesignName>diag</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>33 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B4E6FCF5-4438-3623-15AC-EC3708C75D4C" referredColumn="E7E897AE-5C04-FB30-8213-3C683E68989A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0EAF09A9-6765-CBD0-5160-4463471ABDD6" name="Relation_1_PK">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 20:59:57 UTC</createdTime>
+<ownerDesignName>diag</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4DBCA4FB-7F24-CEEB-BCE8-E2737C65DCE0"/>
+<colUsage columnID="ADAED893-AC66-644A-D8D5-CC6FFA54EBBD"/>
+<colUsage columnID="A853F540-E4C9-E7A1-54DA-8F3DCDFC3E3D"/>
+<colUsage columnID="6E80C538-A552-4A5D-4E14-8508EB20C0E2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2C3E49F6-7C97-4A86-84EB-F398DB3262F9" name="Relation_1_attachment_FK">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 20:59:57 UTC</createdTime>
+<generatorID>3A4C1118-A589-8DEC-BE9F-77042102E174</generatorID>
+<ownerDesignName>diag</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4DBCA4FB-7F24-CEEB-BCE8-E2737C65DCE0"/>
+<colUsage columnID="ADAED893-AC66-644A-D8D5-CC6FFA54EBBD"/>
+<colUsage columnID="A853F540-E4C9-E7A1-54DA-8F3DCDFC3E3D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7E4B2252-E2FA-82F4-DFC1-70AA493B5DCE" name="Relation_1_poll_FK">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 20:59:57 UTC</createdTime>
+<generatorID>3A4C1118-A589-8DEC-BE9F-77042102E174</generatorID>
+<ownerDesignName>diag</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6E80C538-A552-4A5D-4E14-8508EB20C0E2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

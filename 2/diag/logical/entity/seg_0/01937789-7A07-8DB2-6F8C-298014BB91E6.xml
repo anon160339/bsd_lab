@@ -68,6 +68,22 @@
 <dataTypeSize>64 BYTE</dataTypeSize>
 <ownDataTypeParameters>64 BYTE,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="info_public_key1" id="3ABFCBD7-1264-84F5-F400-BE9BA44F8A3C">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 20:58:07 UTC</createdTime>
+<generatorID>EE29B13E-EF11-48CB-0246-EDDC4A6E87D2</generatorID>
+<ownerDesignName>diag</ownerDesignName>
+<engineerTo>
+<item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>2AB7E2BB-C58F-BCB1-0DE0-52300D6109F9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>33 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="509B6F6F-4BDD-B233-7FEC-D6E923C2D3C2" name="user PK">

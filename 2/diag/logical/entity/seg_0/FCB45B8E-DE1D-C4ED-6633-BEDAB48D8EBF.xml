@@ -4,7 +4,7 @@
 <createdTime>2026-01-04 19:50:59 UTC</createdTime>
 <ownerDesignName>diag</ownerDesignName>
 <engineerTo>
-<item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
+<item key="258CED46-79E6-8874-83A6-B3356913A0CE" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -20,7 +20,7 @@
 <createdTime>2026-01-04 20:41:58 UTC</createdTime>
 <ownerDesignName>diag</ownerDesignName>
 <engineerTo>
-<item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
+<item key="258CED46-79E6-8874-83A6-B3356913A0CE" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -33,7 +33,7 @@
 <createdTime>2026-01-04 20:56:30 UTC</createdTime>
 <ownerDesignName>diag</ownerDesignName>
 <engineerTo>
-<item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
+<item key="258CED46-79E6-8874-83A6-B3356913A0CE" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -46,7 +46,7 @@
 <createdTime>2026-01-04 20:56:46 UTC</createdTime>
 <ownerDesignName>diag</ownerDesignName>
 <engineerTo>
-<item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
+<item key="258CED46-79E6-8874-83A6-B3356913A0CE" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -59,7 +59,7 @@
 <createdTime>2026-01-04 20:43:42 UTC</createdTime>
 <ownerDesignName>diag</ownerDesignName>
 <engineerTo>
-<item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
+<item key="258CED46-79E6-8874-83A6-B3356913A0CE" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -74,14 +74,14 @@
 <generatorID>5B00DA77-7FAD-8B46-A6E3-208DA766FD5C</generatorID>
 <ownerDesignName>diag</ownerDesignName>
 <engineerTo>
-<item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
+<item key="258CED46-79E6-8874-83A6-B3356913A0CE" value="true"/>
 </engineerTo>
 <referedAttribute>2AB7E2BB-C58F-BCB1-0DE0-52300D6109F9</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
 <dataTypeSize>33 BYTE</dataTypeSize>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>33 BYTE,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -91,11 +91,12 @@
 <ownerDesignName>diag</ownerDesignName>
 <shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="false"/>
+<item key="258CED46-79E6-8874-83A6-B3356913A0CE" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>6DF8A66A-9B14-BD41-0917-74410BD8AEA5</attributeRef>
+<attributeRef>621F87E7-919C-154C-3104-C2AF5F101CB0</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
