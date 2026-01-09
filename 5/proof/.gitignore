@@ -1,0 +1,8 @@
+*.ptau
+node_modules/**
+circuit_js/**
+circomlib/**
+.nix-bin/**
+**.r1cs
+**.sym
+**.zkey

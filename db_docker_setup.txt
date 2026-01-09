@@ -1,0 +1,29 @@
+===============================================
+
+docker pull gvenzl/oracle-xe
+
+docker run -d \
+  --name oracle-xe \
+  -p 1521:1521 \
+  -p 5500:5500 \
+  -e ORACLE_PASSWORD=MyStrongP@ssword \
+  gvenzl/oracle-xe
+
+docker logs -f oracle-xe
+
+===============================================
+
+Open DBeaver
+Go to Database → New Database Connection
+Choose Oracle from the list
+In the Main tab, fill in:
+Host: localhost
+Port: 1521
+Service name: XEPDB1
+User: system
+Password: MyStrongP@ssword
+Click Test Connection
+
+===============================================
+
+
