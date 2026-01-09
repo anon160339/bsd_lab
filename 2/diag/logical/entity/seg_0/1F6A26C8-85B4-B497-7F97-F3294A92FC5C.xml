@@ -56,20 +56,51 @@
 <dataTypeSize>32 BYTE</dataTypeSize>
 <ownDataTypeParameters>32 BYTE,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="info_name" id="06FDC7E6-77D9-6FEF-2552-67772B5FE97F">
+<Attribute name="info_public_key" id="962C198F-7417-0664-732A-0BB598F17EB0">
 <createdBy>kebabmaster</createdBy>
-<createdTime>2026-01-09 13:58:00 UTC</createdTime>
+<createdTime>2026-01-09 20:22:59 UTC</createdTime>
 <generatorID>56049B2F-66C2-A5BB-A272-8862B32BE328</generatorID>
 <ownerDesignName>diag</ownerDesignName>
 <engineerTo>
 <item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
 </engineerTo>
-<referedAttribute>621F87E7-919C-154C-3104-C2AF5F101CB0</referedAttribute>
+<referedAttribute>6DF8A66A-9B14-BD41-0917-74410BD8AEA5</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>100</dataTypeSize>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>33 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="info_public_key1" id="461F6E56-094F-134C-39E7-46ECCD771E37">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 20:22:59 UTC</createdTime>
+<generatorID>C7AEBCB3-06B6-F692-0286-91215CC78C8C</generatorID>
+<ownerDesignName>diag</ownerDesignName>
+<engineerTo>
+<item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>E91E0ABE-37D3-6FF9-87B8-A5EC7837BFAA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>33 BYTE</dataTypeSize>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A103C22F-2AB8-1646-7C8D-7BE86968AF3E" name="option PK">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 20:25:41 UTC</createdTime>
+<ownerDesignName>diag</ownerDesignName>
+<engineerTo>
+<item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>92E0F433-E0BA-1D9A-73D4-7D971A8AC971</attributeRef>
+<attributeRef>962C198F-7417-0664-732A-0BB598F17EB0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="85EF957D-733E-75AC-85A9-6E058BFB01F3" containerWithKeyObject="CBC2DE21-F892-9C54-9AFA-91ADFA7E842D" localFKIndex="104E7E04-0B71-EC43-6458-70ED091BA932" name="Relation_1_attachment_FK">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 14:14:52 UTC</createdTime>
+<generatorID>3A4C1118-A589-8DEC-BE9F-77042102E174</generatorID>
+<ownerDesignName>diag</ownerDesignName>
+<referredTableLongName>attachment</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>90A2642C-1C09-A0FA-FAFE-21174B178234</referredTableID>
+<keyObject>F38CECA8-CE97-D51E-5DD3-42AA34613A86</keyObject>
+<referredKeyID>F38CECA8-CE97-D51E-5DD3-42AA34613A86</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>attachment_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

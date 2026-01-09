@@ -69,4 +69,18 @@
 <ownDataTypeParameters>64 BYTE,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="509B6F6F-4BDD-B233-7FEC-D6E923C2D3C2" name="user PK">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 14:16:32 UTC</createdTime>
+<ownerDesignName>diag</ownerDesignName>
+<engineerTo>
+<item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2AB7E2BB-C58F-BCB1-0DE0-52300D6109F9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

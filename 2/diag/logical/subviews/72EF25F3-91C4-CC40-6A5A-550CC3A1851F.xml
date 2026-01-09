@@ -16,7 +16,7 @@
 <objectViews>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="01937789-7A07-8DB2-6F8C-298014BB91E6" otype="Entity" vid="51A89A55-DDC8-E68B-DE16-C44A705CF8B8">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="78" y="141" width="140" height="295"/>
+<bounds x="70" y="128" width="140" height="300"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="1F6A26C8-85B4-B497-7F97-F3294A92FC5C" otype="Entity" vid="F8435E24-BB81-8116-9062-FABD86BC0C30">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -60,13 +60,14 @@
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="9F730084-C7B0-8F8F-9AC5-40BB6E72F3FA" otype="Note" vid="BF9CB3A4-CFC2-81A8-5143-F47BC5907470">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="3" y="481" width="197" height="65"/>
+<bounds x="3" y="481" width="280" height="65"/>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3342388</backgroundColor>
 <foregroundColor>-16750900</foregroundColor>
 <comment>Preferred cryptographic systems:
 - Signing system: secp256k1
-- ZK proofs: ZKSNARKs</comment>
+- ZK proofs: ZKSNARKs (+ Poseidon Hash (zk-friendly))
+- General hashing function: SHA256</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="CBD30410-0B71-A399-B5F7-420419E938B8" otype="Note" vid="AA873270-49A1-DF88-D05C-4800A8882741">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -156,7 +157,7 @@ ERD for Trustless and Anonymous Voting system
 </sourceLabel>
 <targetLabel class="oracle.dbtools.crest.model.design.Label">
 <site>2</site>
-<labelBounds x="456" y="462" width="58" height="30"/>
+<labelBounds x="456" y="462" width="61" height="30"/>
 <noBackgroundColor>true</noBackgroundColor>
 <noForegroundColor>true</noForegroundColor>
 </targetLabel>
@@ -171,7 +172,7 @@ ERD for Trustless and Anonymous Voting system
 <lineWidth>1</lineWidth>
 <sourceLabel class="oracle.dbtools.crest.model.design.Label">
 <site>0</site>
-<labelBounds x="228" y="286" width="70" height="30"/>
+<labelBounds x="220" y="286" width="70" height="30"/>
 <noBackgroundColor>true</noBackgroundColor>
 <noForegroundColor>true</noForegroundColor>
 </sourceLabel>
@@ -182,7 +183,7 @@ ERD for Trustless and Anonymous Voting system
 <noForegroundColor>true</noForegroundColor>
 </targetLabel>
 <points>
-<point x="218" y="316"/>
+<point x="210" y="316"/>
 <point x="385" y="316"/>
 </points>
 </Connector>
@@ -192,19 +193,19 @@ ERD for Trustless and Anonymous Voting system
 <lineWidth>1</lineWidth>
 <sourceLabel class="oracle.dbtools.crest.model.design.Label">
 <site>0</site>
-<labelBounds x="636" y="390" width="89" height="30"/>
+<labelBounds x="636" y="371" width="89" height="30"/>
 <noBackgroundColor>true</noBackgroundColor>
 <noForegroundColor>true</noForegroundColor>
 </sourceLabel>
 <targetLabel class="oracle.dbtools.crest.model.design.Label">
 <site>2</site>
-<labelBounds x="228" y="393" width="72" height="30"/>
+<labelBounds x="220" y="404" width="72" height="30"/>
 <noBackgroundColor>true</noBackgroundColor>
 <noForegroundColor>true</noForegroundColor>
 </targetLabel>
 <points>
-<point x="731" y="390"/>
-<point x="218" y="393"/>
+<point x="731" y="401"/>
+<point x="210" y="401"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="C7AEBCB3-06B6-F692-0286-91215CC78C8C" otype="Relation" vid_source="678C45E6-C3B8-FFEE-7B53-088440EFF871" vid_target="F8435E24-BB81-8116-9062-FABD86BC0C30">
@@ -234,19 +235,19 @@ ERD for Trustless and Anonymous Voting system
 <lineWidth>1</lineWidth>
 <sourceLabel class="oracle.dbtools.crest.model.design.Label">
 <site>0</site>
-<labelBounds x="291" y="97" width="87" height="34"/>
+<labelBounds x="291" y="93" width="87" height="34"/>
 <noBackgroundColor>true</noBackgroundColor>
 <noForegroundColor>true</noForegroundColor>
 </sourceLabel>
 <targetLabel class="oracle.dbtools.crest.model.design.Label">
 <site>2</site>
-<labelBounds x="228" y="231" width="57" height="30"/>
+<labelBounds x="220" y="225" width="57" height="30"/>
 <noBackgroundColor>true</noBackgroundColor>
 <noForegroundColor>true</noForegroundColor>
 </targetLabel>
 <points>
-<point x="384" y="97"/>
-<point x="218" y="231"/>
+<point x="384" y="93"/>
+<point x="210" y="225"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="EE29B13E-EF11-48CB-0246-EDDC4A6E87D2" otype="Relation" vid_source="51A89A55-DDC8-E68B-DE16-C44A705CF8B8" vid_target="51A89A55-DDC8-E68B-DE16-C44A705CF8B8">
@@ -255,22 +256,22 @@ ERD for Trustless and Anonymous Voting system
 <lineWidth>1</lineWidth>
 <sourceLabel class="oracle.dbtools.crest.model.design.Label">
 <site>0</site>
-<labelBounds x="28" y="132" width="84" height="36"/>
+<labelBounds x="20" y="120" width="84" height="36"/>
 <noBackgroundColor>true</noBackgroundColor>
 <noForegroundColor>true</noForegroundColor>
 </sourceLabel>
 <targetLabel class="oracle.dbtools.crest.model.design.Label">
 <site>2</site>
-<labelBounds x="172" y="68" width="64" height="34"/>
+<labelBounds x="164" y="56" width="64" height="34"/>
 <noBackgroundColor>true</noBackgroundColor>
 <noForegroundColor>true</noForegroundColor>
 </targetLabel>
 <points>
-<point x="78" y="153"/>
-<point x="28" y="153"/>
-<point x="28" y="81"/>
-<point x="172" y="81"/>
-<point x="172" y="141"/>
+<point x="70" y="141"/>
+<point x="20" y="141"/>
+<point x="20" y="69"/>
+<point x="164" y="69"/>
+<point x="164" y="128"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="F69629B7-DEF9-5C42-D25D-423E63FBD071" otype="Relation" vid_source="678C45E6-C3B8-FFEE-7B53-088440EFF871" vid_target="2F86E315-0476-A028-6AFD-463EF71F5EF7">

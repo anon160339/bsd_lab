@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9010067A-6788-6032-0D3D-C972FC664A82" containerWithKeyObject="21E5571A-1CC6-B8B0-8D4C-D4210485DFE2" localFKIndex="4FEBCD20-5F09-3826-D14D-6F7B7C9F82A0" name="option_poll_FK">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 14:14:52 UTC</createdTime>
+<generatorID>56049B2F-66C2-A5BB-A272-8862B32BE328</generatorID>
+<ownerDesignName>diag</ownerDesignName>
+<referredTableLongName>poll</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>9C49B672-3C4F-95F1-D6E5-2670479BC6AE</referredTableID>
+<keyObject>0916E1F8-F424-EC23-D569-E37A5B04817A</keyObject>
+<referredKeyID>0916E1F8-F424-EC23-D569-E37A5B04817A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>info_name,info_public_key</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

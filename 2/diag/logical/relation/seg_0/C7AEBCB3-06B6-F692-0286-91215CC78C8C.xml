@@ -6,6 +6,8 @@
 <engineerTo>
 <item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
 </engineerTo>
+<sourcePk>4DFB4540-0E63-03C3-48C6-45B11AA9073F</sourcePk>
+<targetPk>A103C22F-2AB8-1646-7C8D-7BE86968AF3E</targetPk>
 <identifying>false</identifying>
 <nameOnSource>fits into</nameOnSource>
 <nameOnTarget>can take values like</nameOnTarget>

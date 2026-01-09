@@ -54,5 +54,35 @@
 <dataTypeSize>64 BYTE</dataTypeSize>
 <ownDataTypeParameters>64 BYTE,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="info_public_key" id="06524E0A-1277-EA43-D5BA-194E215E8419">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 20:22:59 UTC</createdTime>
+<generatorID>CB45A0BA-767A-4A7B-C793-F8B5C5C36A33</generatorID>
+<ownerDesignName>diag</ownerDesignName>
+<engineerTo>
+<item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
+</engineerTo>
+<referedAttribute>2AB7E2BB-C58F-BCB1-0DE0-52300D6109F9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>33 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="29DADCED-B73D-0630-B0D6-899A65834A93" name="attachment PK">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 20:23:18 UTC</createdTime>
+<ownerDesignName>diag</ownerDesignName>
+<engineerTo>
+<item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7BBC6272-FC47-9058-4997-F23B69EE67D4</attributeRef>
+<attributeRef>AD650B61-D216-2B3D-CB65-0C770DD1EF71</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

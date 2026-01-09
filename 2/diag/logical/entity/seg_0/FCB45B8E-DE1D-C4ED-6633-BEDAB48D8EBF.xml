@@ -68,18 +68,34 @@
 <dataTypeSize>64</dataTypeSize>
 <ownDataTypeParameters>64,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="info_public_key" id="6DF8A66A-9B14-BD41-0917-74410BD8AEA5">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 20:22:59 UTC</createdTime>
+<generatorID>5B00DA77-7FAD-8B46-A6E3-208DA766FD5C</generatorID>
+<ownerDesignName>diag</ownerDesignName>
+<engineerTo>
+<item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
+</engineerTo>
+<referedAttribute>2AB7E2BB-C58F-BCB1-0DE0-52300D6109F9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>33 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="28C0F0E3-70B7-E386-2D0D-56DA7B20651E" name="poll PK">
 <createdBy>kebabmaster</createdBy>
 <createdTime>2026-01-09 13:49:17 UTC</createdTime>
 <ownerDesignName>diag</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
+<item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>621F87E7-919C-154C-3104-C2AF5F101CB0</attributeRef>
+<attributeRef>6DF8A66A-9B14-BD41-0917-74410BD8AEA5</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

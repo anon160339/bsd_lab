@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CBC2DE21-F892-9C54-9AFA-91ADFA7E842D" name="Relation_1">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 14:14:52 UTC</createdTime>
+<ownerDesignName>diag</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="attachment_attachment_ID" id="F6257811-64D7-792D-0753-58CB92ADF41C">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 14:14:52 UTC</createdTime>
+<ownerDesignName>diag</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="85EF957D-733E-75AC-85A9-6E058BFB01F3" referredColumn="6793EF96-17EC-6950-AEC0-ED2742D85429"/>
+</associations>
+</Column>
+<Column name="poll_info_name" id="A9769B13-67A3-8633-6ED9-88E593514E67">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 14:14:52 UTC</createdTime>
+<ownerDesignName>diag</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A90AC504-7C8E-A851-8C73-4085BBC242B7" referredColumn="D4AD4DB1-EE6D-7381-B32F-1F2C7E580F8D"/>
+</associations>
+</Column>
+<Column name="poll_info_public_key" id="D226782F-6EF0-F3F8-1B58-7975D7CCAC0C">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 14:16:41 UTC</createdTime>
+<ownerDesignName>diag</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>33 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A90AC504-7C8E-A851-8C73-4085BBC242B7" referredColumn="F5F4CF66-34CF-17F0-B56D-E4F09AB7434A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7CD55FF9-6F85-B8A0-C03C-7447C5A4F240" name="Relation_1_PK">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 14:14:52 UTC</createdTime>
+<ownerDesignName>diag</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F6257811-64D7-792D-0753-58CB92ADF41C"/>
+<colUsage columnID="A9769B13-67A3-8633-6ED9-88E593514E67"/>
+<colUsage columnID="D226782F-6EF0-F3F8-1B58-7975D7CCAC0C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="104E7E04-0B71-EC43-6458-70ED091BA932" name="Relation_1_attachment_FK">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 14:14:52 UTC</createdTime>
+<generatorID>3A4C1118-A589-8DEC-BE9F-77042102E174</generatorID>
+<ownerDesignName>diag</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F6257811-64D7-792D-0753-58CB92ADF41C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C3D98952-B4F2-1D93-2C82-15572ADCE907" name="Relation_1_poll_FK">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 14:14:52 UTC</createdTime>
+<generatorID>3A4C1118-A589-8DEC-BE9F-77042102E174</generatorID>
+<ownerDesignName>diag</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A9769B13-67A3-8633-6ED9-88E593514E67"/>
+<colUsage columnID="D226782F-6EF0-F3F8-1B58-7975D7CCAC0C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

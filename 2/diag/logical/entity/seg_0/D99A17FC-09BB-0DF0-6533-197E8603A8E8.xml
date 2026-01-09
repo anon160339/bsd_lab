@@ -80,20 +80,67 @@
 <logicalDatatype>47823B89-BECE-2D4A-B641-EE3BE6149078</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="info_name" id="BF134FB0-7D20-F4E0-09E3-32333AA95E53">
+<Attribute name="info_public_key" id="E91E0ABE-37D3-6FF9-87B8-A5EC7837BFAA">
 <createdBy>kebabmaster</createdBy>
-<createdTime>2026-01-09 13:58:00 UTC</createdTime>
+<createdTime>2026-01-09 20:22:59 UTC</createdTime>
 <generatorID>F69629B7-DEF9-5C42-D25D-423E63FBD071</generatorID>
 <ownerDesignName>diag</ownerDesignName>
 <engineerTo>
 <item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
 </engineerTo>
-<referedAttribute>621F87E7-919C-154C-3104-C2AF5F101CB0</referedAttribute>
+<referedAttribute>6DF8A66A-9B14-BD41-0917-74410BD8AEA5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>33 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="F9475033-F121-168E-CDD3-663D326C0482">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 20:25:42 UTC</createdTime>
+<generatorID>C7AEBCB3-06B6-F692-0286-91215CC78C8C</generatorID>
+<ownerDesignName>diag</ownerDesignName>
+<engineerTo>
+<item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>92E0F433-E0BA-1D9A-73D4-7D971A8AC971</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>100</dataTypeSize>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="info_public_key1" id="85AC8E66-C481-8621-A6C6-A19F99721CCC">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 20:26:04 UTC</createdTime>
+<generatorID>C7AEBCB3-06B6-F692-0286-91215CC78C8C</generatorID>
+<ownerDesignName>diag</ownerDesignName>
+<engineerTo>
+<item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>962C198F-7417-0664-732A-0BB598F17EB0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-4BABEC65-108B-2A3C-F7C4-84AC47D292B0@LOGDT10040</logicalDatatype>
+<dataTypeSize>33 BYTE</dataTypeSize>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4DFB4540-0E63-03C3-48C6-45B11AA9073F" name="vote PK">
+<createdBy>kebabmaster</createdBy>
+<createdTime>2026-01-09 14:13:07 UTC</createdTime>
+<ownerDesignName>diag</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="78F79CA7-E31C-56D2-2AA8-630CA7FE7BED" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E91E0ABE-37D3-6FF9-87B8-A5EC7837BFAA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>
