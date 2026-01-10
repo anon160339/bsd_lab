@@ -58,7 +58,7 @@ template MainCircuit(merkle_level_count) {
     
     //get element (end leaf) path
     component bits = Num2Bits(merkle_level_count);
-    bits.in <== entry_index - 1;
+    bits.in <== entry_index;
 
     //computation parts
     component ph_left[merkle_level_count];
