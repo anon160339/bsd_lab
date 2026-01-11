@@ -40,7 +40,7 @@ r:
     const last_index = process.argv.length - 1;
 
     const proofInput = {
-        vote: 694,
+        vote: 5,
         s: 345,
         k: 357,
         entry_index: 2,
