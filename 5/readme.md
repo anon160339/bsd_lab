@@ -82,7 +82,7 @@ Verification: true
 
 # Załączniki
 
-Wygenerowane przez `/5/user/alice_sign_attachments.js`.
+Wygenerowane przez `/5/user/alice_sign_attachments.js` *(wchodzi w skład głosowania do podpisu)*.
 
 ```yaml
 message: {
@@ -100,3 +100,124 @@ message: {
 signature: 3dc5a63a1af09d3a1e3d3caaf6725b9bea1d3970aab745e0abebb1d08438599d5cc26b027717cf7d8a3ad7b43ac1e660110bff374ce93c7ec9fab796016293d2
 Verification: true
 ```
+
+# Opcje
+
+Ręcznie przepisane *(wchodzi w skład głosowania do podpisu)*:
+
+```yaml
+name: "Jabłkowy"
+minimumValue: 0n
+maximumValue: 0n
+```
+```yaml
+name: "Pomarańczowy"
+minimumValue: 1n
+maximumValue: 1n
+```
+```yaml
+name: "Marchewkowy"
+minimumValue: 2n
+maximumValue: 2n
+```
+```yaml
+name: "nie wiem, ale napewno dobry."
+minimumValue: 3n
+maximumValue: 3n
+```
+```yaml
+name: "nie głosuj na tą opcje bo będziesz miał koszmary."
+minimumValue: 4n
+maximumValue: 4n
+```
+```yaml
+name: "Waniliowy"
+minimumValue: 5n
+maximumValue: 5n
+```
+```yaml
+name: "Tajemna Opcja - nie ufaj readme.md"
+minimumValue: 7n
+maximumValue: 10n
+```
+
+# Uczestnicy
+
+Ręcznie przepisane *(wchodzi w skład głosowania do podpisu)*:
+
+- `0326605e51658dacbcae40879a3e999d81fe01c352948347205c7de5484f923426` - Alicja
+- `020340726a7434cb3cf0e4a32b546497079330145525d52c0fee38d48df384a282` - Adam
+- `024e747154f1843e8e24b750e6ac3f96b9206ed98a7fa13585321031f1d8019fdb` - Ewa
+- `03b7e0e0383a0908ab0c33fb6b00519ad78312c8f2a15e8d6ea8671f500e47eddd` - Wiktor
+- `021435d498cbe86ad67a8b62b768197543e88f3330c054f358ad153ec5fb898b70` - Peggy
+
+# Głosowanie
+
+
+# Wpisy
+
+
+
+
+
+
+
+Wpisy tworzą poindeksowaną tablice, z której można wyznaczyć Merkle Tree Root:
+
+![](proof/diag.drawio.svg)
+
+Zaznaczony jest również Merkle Proof potrzebny do oddania głosu przez osobe która jako 3 zrobiła wpis do głosowania.
+
+# Głos
+
+```js
+const proofInput = {
+    vote: 694,
+    s: 345,
+    k: 357,
+    entry_index: 2,
+    merkle_leafs: [
+        7020003394394666990960673981134349377535980189597271278044812177123909403151n,
+        14773286974096855589808739694181791015827463825449008199871790464929355935269n,
+        12926273887286769764467998999544163914307559922216585524378099580891955033415n
+    ],
+    previous_vote: 0
+};
+```
+```yaml
+Proof:  {
+  pi_a: [
+    '18495026555295462320744534047585555562434176323142805468626712107081466174995',
+    '1292123426698408921458278544361940103256172288572429802429095969336963604184',
+    '1'
+  ],
+  pi_b: [
+    [
+      '8251739099827338609645553637155885604783069547064042310525483470634588304387',
+      '19731438898317425399253426540371813945798778492422703936861428308447708508851'
+    ],
+    [
+      '17969406507484358562211526507751378562307215362951378368043273302729766949705',
+      '7301946831687145704504840406771409048758493302062899077151355346983313166413'
+    ],
+    [ '1', '0' ]
+  ],
+  pi_c: [
+    '11074151130923865814012895567913192893239744009019648394852943867109512795179',
+    '7014246034337802212750375969882966017859903808839320540573474151396378877718',
+    '1'
+  ],
+  protocol: 'groth16',
+  curve: 'bn128'
+}
+```
+```yaml
+Public Signals:  [
+  '694',
+  '20360603988586681101815423710549687557453306039451934310081534445955512430987',
+  '357',
+  '0'
+]
+```
+
+Układ odpowiedzialny za generowanie dowodu: [circuit.circom](proof/circuit.circom).
