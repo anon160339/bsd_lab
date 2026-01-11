@@ -81,3 +81,22 @@ Verification: true
 ```
 
 # Załączniki
+
+Wygenerowane przez `/5/user/alice_sign_attachments.js`.
+
+```yaml
+message: {
+  hash: '7aadde35111e11442c89ee7ea02e191c5bcca18218ef6955feedb54b45be4f23',
+  address: 'https://raw.githubusercontent.com/REDACTED_USERNAME/bsd_lab/refs/heads/master/5/attachments/majster.jpg'
+}
+signature: 5fcac83e327bd2a7238cc4938a501b53aee5bd460b38524307af11b205dd891375bb1bb8ba774953b420ec7f6f4481fd11d69330123ce5299e38c2191ec0a725
+Verification: true
+```
+```yaml
+message: {
+  hash: '2b8244fd9086fc945a340b85f28ab7f759351715f07479ee887c2fea98f8870e',
+  address: 'https://raw.githubusercontent.com/REDACTED_USERNAME/bsd_lab/refs/heads/master/5/attachments/readme.md'
+}
+signature: 3dc5a63a1af09d3a1e3d3caaf6725b9bea1d3970aab745e0abebb1d08438599d5cc26b027717cf7d8a3ad7b43ac1e660110bff374ce93c7ec9fab796016293d2
+Verification: true
+```
