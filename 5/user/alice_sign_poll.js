@@ -1,19 +1,5 @@
 import * as secp from '@noble/secp256k1';
 import { createHash, createHmac, randomBytes } from 'crypto';
-import fs from "fs";
-
-// change this to your file
-
-function hashFile(filePath) {
-  return new Promise((resolve, reject) => {
-    const hash = createHash("sha256");
-    const stream = fs.createReadStream(filePath);
-
-    stream.on("error", reject);
-    stream.on("data", chunk => hash.update(chunk));
-    stream.on("end", () => resolve(hash.digest("hex")));
-  });
-}
 
 // ---- REQUIRED SETUP ----
 secp.hashes.sha256 = (msg) =>
@@ -107,4 +93,6 @@ console.log("signature:", Uint8ArrayToHex(signature));
 const ok = secp.verify(signature, message, alice_publicKey);
 console.log("Verification:", ok);
 
-
+//generate poll hash
+const hash = createHash('sha256').update(message).digest('hex');
+console.log("hash:", hash);

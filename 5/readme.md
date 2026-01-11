@@ -201,6 +201,7 @@ message: {
 }
 signature: 8675e94befe8293230856ddcc63e77e48ba916d8fa3ab1bd9674b65fe95b405a479c561320383c706b79be319ec9f026e59e296cef49e787bb6e91623faa7fb0
 Verification: true
+hash: 832f4e8e2ba8f691f1c48eee4d6fb502783d92b8a2a5a43efab5a7e4d40b07bb
 ```
 
 # Wpisy
