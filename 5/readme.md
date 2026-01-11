@@ -206,11 +206,63 @@ hash: 832f4e8e2ba8f691f1c48eee4d6fb502783d92b8a2a5a43efab5a7e4d40b07bb
 
 # Wpisy
 
+Wygenerowane przez `/5/user/generate_entries.js`.
 
-
-
-
-
+```yaml
+message: {
+  index: 0,
+  hash: '19620391833206800292073497099357851348339828238212863168390691880932172496143',
+  previousEntry: null,
+  pollHash: '832f4e8e2ba8f691f1c48eee4d6fb502783d92b8a2a5a43efab5a7e4d40b07bb'
+}
+signature: e1d6d27d145119aa7536e686f754c8e4e03d726761a2c16d9baa4e1f76b74aff52a34c98a8648bb3fccd4e089c2fb08f458b92da7fdddf7c739e1257d9906cac
+Verification: true
+blockHash: df58cbf6e3e2077b0c466c1762a5a8f1f534cfeb50d185a98ea7d6030fd1b6fa
+```
+```yaml
+message: {
+  index: 1,
+  hash: '9051922361319954272403172740714292002550212200426269551764287908424859351883',
+  previousEntry: 'df58cbf6e3e2077b0c466c1762a5a8f1f534cfeb50d185a98ea7d6030fd1b6fa',
+  pollHash: '832f4e8e2ba8f691f1c48eee4d6fb502783d92b8a2a5a43efab5a7e4d40b07bb'
+}
+signature: ab2e026f39028116f8e8aabb9ae5c9c38bac1fb1720faa1ba2520838cdd21da7014fa9b24356b6da226ef819a0ed279a7a1ea38a776d2683c65e779f0c3bd693
+Verification: true
+blockHash: 8579da388999d677e8600ac9b9df319c116e2faad174a888e0307e3e57dee6d3
+```
+```yaml
+message: {
+  index: 2,
+  hash: '10540957019918467923199933588039634723571444319347712217290279586026394524342',
+  previousEntry: '8579da388999d677e8600ac9b9df319c116e2faad174a888e0307e3e57dee6d3',
+  pollHash: '832f4e8e2ba8f691f1c48eee4d6fb502783d92b8a2a5a43efab5a7e4d40b07bb'
+}
+signature: 48bf2dc36874fe07f4e1c3971dde47753ae6886b7f430a318c7f3b213b4b27316480b61a64791984d42374f29379ba925a62c2e6a1727b6991344f921a7cef74
+Verification: true
+blockHash: f3ccaf43d45ff11ec76bd72ec3935e4ebc1aceebab69869b2445072c3008fda0
+```
+```yaml
+message: {
+  index: 3,
+  hash: '7020003394394666990960673981134349377535980189597271278044812177123909403151',
+  previousEntry: 'f3ccaf43d45ff11ec76bd72ec3935e4ebc1aceebab69869b2445072c3008fda0',
+  pollHash: '832f4e8e2ba8f691f1c48eee4d6fb502783d92b8a2a5a43efab5a7e4d40b07bb'
+}
+signature: 36db32d9bd5bc8c037a61a7f855b517bbfa773698bbc3dbd9485f45479ddea395e58122cf3d32d3290490cf74e3c74c998359d5b1c05124cf94d3ce9b6deb62f
+Verification: true
+blockHash: 9b68b1978455300eff2de12b35fd26048bb5d1f2ef8c7075d6b14ed95eae0977
+```
+```yaml
+message: {
+  index: 4,
+  hash: '1993011637717623898791224486034026462427770786930527811733084141759428025595',
+  previousEntry: '9b68b1978455300eff2de12b35fd26048bb5d1f2ef8c7075d6b14ed95eae0977',
+  pollHash: '832f4e8e2ba8f691f1c48eee4d6fb502783d92b8a2a5a43efab5a7e4d40b07bb'
+}
+signature: 6d7148b6cc90cbd791b3ddb01dba3da6d521b33301b52c560f1702c72eb7e44e2bb023914ab2cd4858d58c0ea1002eb39cddff3209e1db7163d94ccb2a6c33b2
+Verification: true
+blockHash: 4c776e1edcc688f16e1d842ff31fc0cf133026f35d3d0552053fc792a63b882b
+```
 
 Wpisy tworzą poindeksowaną tablice, z której można wyznaczyć Merkle Tree Root:
 
@@ -233,7 +285,9 @@ const proofInput = {
 };
 ```
 
-Ręczna weryfikacja Merkle Tree Root: [Poseidon Online](https://poseidon-online.pages.dev/)
+Ręczną weryfikacja Merkle Tree Root można dokonać przy urzyciu: [Poseidon Online](https://poseidon-online.pages.dev/)
+
+Dodatkowo wpisy formują łańcuch, co gwarantuje cięższe usówanie głosów.
 
 # Głos
 

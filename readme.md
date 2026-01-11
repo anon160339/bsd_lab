@@ -17,6 +17,4 @@ Krok 4. Skrypt z poleceniami DDL
 
 Krok 5. Skrypt z poleceniami DML
 - [ekursy](https://ekursy.put.poznan.pl/mod/assign/view.php?id=603142)
-
-Wizualizacja Merkle Tree i Merkle Proof:
-![](./5/proof/diag.drawio.svg)
+- [Przykładowe Dane](/5/readme.md)
