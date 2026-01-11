@@ -116,8 +116,9 @@ template MainCircuit(merkle_level_count) {
 //      wires: 10916
 //      labels: 16175
 
-// Max number of voters: 2 ** 10 = 1024
-component main = MainCircuit(10);
+// Example used:
+// Max number of voters: 2 ** 3 = 8
+component main = MainCircuit(3);
 
 
 
