@@ -153,6 +153,55 @@ Ręcznie przepisane *(wchodzi w skład głosowania do podpisu)*:
 
 # Głosowanie
 
+Wygenerowane przez `/5/user/alice_sign_poll.js`.
+
+```yaml
+message: {
+  name: 'my-first-anon-poll',
+  start: null,
+  end: null,
+  attachments: [
+    {
+      hash: '7aadde35111e11442c89ee7ea02e191c5bcca18218ef6955feedb54b45be4f23',
+      address: 'https://raw.githubusercontent.com/REDACTED_USERNAME/bsd_lab/refs/heads/master/5/attachments/majster.jpg'
+    },
+    {
+      hash: '2b8244fd9086fc945a340b85f28ab7f759351715f07479ee887c2fea98f8870e',
+      address: 'https://raw.githubusercontent.com/REDACTED_USERNAME/bsd_lab/refs/heads/master/5/attachments/readme.md'
+    }
+  ],
+  members: [
+    '0326605e51658dacbcae40879a3e999d81fe01c352948347205c7de5484f923426',
+    '020340726a7434cb3cf0e4a32b546497079330145525d52c0fee38d48df384a282',
+    '024e747154f1843e8e24b750e6ac3f96b9206ed98a7fa13585321031f1d8019fdb',
+    '03b7e0e0383a0908ab0c33fb6b00519ad78312c8f2a15e8d6ea8671f500e47eddd',
+    '021435d498cbe86ad67a8b62b768197543e88f3330c054f358ad153ec5fb898b70'
+  ],
+  options: [
+    { name: 'Jabłkowy', minimumValue: '0', maximumValue: '0' },
+    { name: 'Pomarańczowy', minimumValue: '1', maximumValue: '1' },
+    { name: 'Marchewkowy', minimumValue: '2', maximumValue: '2' },
+    {
+      name: 'nie wiem, ale napewno dobry.',
+      minimumValue: '3',
+      maximumValue: '3'
+    },
+    {
+      name: 'nie głosuj na tą opcje bo będziesz miał koszmary.',
+      minimumValue: '4',
+      maximumValue: '4'
+    },
+    { name: 'Waniliowy', minimumValue: '5', maximumValue: '5' },
+    {
+      name: 'Tajemna Opcja - nie ufaj readme.md',
+      minimumValue: '7',
+      maximumValue: '10'
+    }
+  ]
+}
+signature: 8675e94befe8293230856ddcc63e77e48ba916d8fa3ab1bd9674b65fe95b405a479c561320383c706b79be319ec9f026e59e296cef49e787bb6e91623faa7fb0
+Verification: true
+```
 
 # Wpisy
 
@@ -226,3 +275,5 @@ Public Signals:  [
 ```
 
 Układ odpowiedzialny za generowanie dowodu: [circuit.circom](proof/circuit.circom).
+
+Dowód może się różnić od potęg $\tau$ użytych do konstrukcji kluczy.
