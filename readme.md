@@ -1,4 +1,4 @@
-# bsd_lab
+# bd_lab
 
 Krok 1. Zgłoszenie grupy + krótki opis modelowanej rzeczywistości
 - [ekursy](https://ekursy.put.poznan.pl/mod/assign/view.php?id=603135)
