@@ -70,17 +70,24 @@ for (const user of users){
     //reconstruct keys
     const privateKey = Buffer.from(user.privateKey, 'hex');
     const publicKey = secp.getPublicKey(privateKey);
+    console.log("publicKey:", Uint8ArrayToHex(publicKey));
+
+    //generate hash
+    const hash = await poseidonHash2(user.s, user.k);
 
     //construct message
     let message = {
         index: i++,
-        hash: SerializeBigInt(await poseidonHash2(user.s, user.k)),
+        hash: SerializeBigInt(hash),
         previousEntry: previousBlockHash,
         pollHash: pollHash
     };
     console.log("message:", message);
     const messageToSign = Buffer.from(JSON.stringify(message));
     
+    //hash for sql
+    console.log("HEX(BIGNUMBER(message.hash)):", hash.toString(16).padStart(64, "0"));
+
     //sign
     const signature = await secp.sign(messageToSign, privateKey);
     console.log("signature:", Uint8ArrayToHex(signature));

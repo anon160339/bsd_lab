@@ -60,6 +60,8 @@ r:
     console.log('Proof: ', proof);
     console.log('Public Signals: ', publicSignals);
 
+    console.log("merkle root in hex:", BigInt(publicSignals[1]).toString(16).padStart(64, "0"))
+
     const vKey = JSON.parse(fs.readFileSync('circuit_verifier.json'));
     const res = await snarkjs.groth16.verify(vKey, publicSignals, proof);
     if(res){
