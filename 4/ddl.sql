@@ -149,10 +149,10 @@ CREATE TABLE VOTES (
     --x (optional relation) 
     option_name VARCHAR2(50),
     option_info_public_key CHAR(33),
-    option_info_name VARCHAR2(100)
+    option_info_name VARCHAR2(100),
     --y
     poll_user_info_public_key CHAR(33) NOT NULL,
-    poll_info_name VARCHAR2(100) NOT NULL,
+    poll_info_name VARCHAR2(100) NOT NULL
 );
 
 --x (optional relation)
