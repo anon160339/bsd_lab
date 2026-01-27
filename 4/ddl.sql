@@ -146,13 +146,17 @@ CREATE TABLE VOTES (
     vote_nullifier CHAR(32) NOT NULL,
     vote_previous_vote CHAR(32),
     proof_vote CLOB NOT NULL,       --may depend on used zk-proving system (format of the proof) (expecting JSON)
-    --x
+    --x (optional relation) 
     option_name VARCHAR2(50),
-    option_info_public_key RAW(33),
+    option_info_public_key CHAR(33),
     option_info_name VARCHAR2(100)
+    --y
+    poll_user_info_public_key CHAR(33) NOT NULL,
+    poll_info_name VARCHAR2(100) NOT NULL,
 );
 
-ALTER TABLE VOTES ADD CONSTRAINT vote_option_fk FOREIGN KEY (
+--x (optional relation)
+ALTER TABLE VOTES ADD CONSTRAINT votes_fk1 FOREIGN KEY (
     option_name,
     option_info_public_key,
     option_info_name
@@ -160,4 +164,14 @@ ALTER TABLE VOTES ADD CONSTRAINT vote_option_fk FOREIGN KEY (
     name,
     poll_user_info_public_key,
     poll_info_name
+);
+
+--y
+ALTER TABLE VOTES ADD CONSTRAINT votes_pk PRIMARY KEY (vote_nullifier, poll_user_info_public_key, poll_info_name);
+ALTER TABLE VOTES ADD CONSTRAINT votes_fk2 FOREIGN KEY (
+    poll_user_info_public_key,
+    poll_info_name
+) REFERENCES POLLS(
+    user_info_public_key,
+    info_name
 );
