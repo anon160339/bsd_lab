@@ -14,7 +14,10 @@ Krok 3. Diagram relacji (w postaci pliku graficznego)
 
 Krok 4. Skrypt z poleceniami DDL
 - [ekursy](https://ekursy.put.poznan.pl/mod/assign/view.php?id=603141)
+- [`ddl.sql`](/4/ddl.sql)
 
 Krok 5. Skrypt z poleceniami DML
 - [ekursy](https://ekursy.put.poznan.pl/mod/assign/view.php?id=603142)
-- [Przykładowe Dane](/5/readme.md)
+- [`dml.sql`](/5/dml.sql)
+- [dane](/5/dane.md)
+- [skrypty](/5/skrypty.md)
