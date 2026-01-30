@@ -97,7 +97,6 @@ const votes = [
         previous_vote: 0n
     }
 ];
-//example command: `node gen_proof.js 1 2 3 4 5 6`
 (async () => {
     const snarkjs = require('snarkjs');
     const fs = require('fs');

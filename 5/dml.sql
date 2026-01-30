@@ -1,5 +1,22 @@
 --================================================================
 
+-- Tajemnice:
+-- -- Klucze prywatne dla systemu podpisoów (ECDSA):
+-- -- -- Admin: 0xd0ebe3276e1a9a87ab5c183aa76099578963f5053fcfcdf2492b5382838c158a
+-- -- -- Alicja: 0x8dfc2aab04a48914bee1fef90f5357f9120651f172d879ea29fd2222cf8b72dc
+-- -- -- Adam: 0x91de483be3a69963953ff3c557feeda1a44cbec64b59b544cbc734ee992fe8f4
+-- -- -- Ewa: 0x78fa750061d1dec95949ae3e64e36b2966f2bdbd0bfc55ad97536b6f7e32a813
+-- -- -- Wiktor: 0x92a3d644990929657cd9514a444482b907d59b5425bf992c3e3154217605e5d5
+-- -- -- Peggy: 0x665ff0478cf3190c22acff57c8ddfeb004891553c0028297467a9505e741f031
+-- -- Sekrety dla tworzenia wpisów (PoseidonHash(s, k)):
+-- -- -- Alicja: {s: 123, k: 456}
+-- -- -- Adam: {s: 321, k: 654}
+-- -- -- Ewa: {s: 345, k: 357}
+-- -- -- Wiktor: {s: 11, k: 11}
+-- -- -- Peggy: {s: 13, k: 18}
+
+--================================================================
+
 -- System rejestruje Admina
 
 INSERT INTO USERS (
@@ -600,7 +617,7 @@ INSERT INTO VOTES (
 --================================================================
 
 -- System otrzymuje wiadomość twierdzącą że jest głosem do głosowania Alicji o nazwie 'my-first-anon-poll'.
--- System z wiadomości odczytuje i werifikuje: ..
+-- System z wiadomości odczytuje i werifikuje: ...
 -- -- -- Głos pasuje do opcji "nie wiem, ale napewno dobry.".
 -- Tajemnice:
 -- -- Głos stworzyła Peggy.
@@ -666,7 +683,7 @@ INSERT INTO VOTES (
 --================================================================
 
 -- System otrzymuje wiadomość twierdzącą że jest głosem do głosowania Alicji o nazwie 'my-first-anon-poll'.
--- System z wiadomości odczytuje i werifikuje: ..
+-- System z wiadomości odczytuje i werifikuje: ...
 -- -- -- Głos pasuje do opcji "Pomarańczowy".
 -- Tajemnice:
 -- -- Głos stworzył Adam.
@@ -732,7 +749,7 @@ INSERT INTO VOTES (
 --================================================================
 
 -- System otrzymuje wiadomość twierdzącą że jest głosem do głosowania Alicji o nazwie 'my-first-anon-poll'.
--- System z wiadomości odczytuje i werifikuje: ..
+-- System z wiadomości odczytuje i werifikuje: ...
 -- -- -- Głos pasuje do opcji "Waniliowy".
 -- Tajemnice:
 -- -- Głos stworzyła Alicja.
@@ -798,7 +815,7 @@ INSERT INTO VOTES (
 --================================================================
 
 -- System otrzymuje wiadomość twierdzącą że jest głosem do głosowania Alicji o nazwie 'my-first-anon-poll'.
--- System z wiadomości odczytuje i werifikuje: ..
+-- System z wiadomości odczytuje i werifikuje: ...
 -- -- -- Głos pasuje do opcji "Waniliowy".
 -- Tajemnice:
 -- -- Głos stworzył Wiktor.

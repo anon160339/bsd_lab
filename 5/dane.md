@@ -2,7 +2,7 @@
 
 ### Admin
 
-Wygenerowane przez `/5/user/generate_keyPair.js`.
+Wygenerowane przez `/user/generate_keyPair.js`.
 
 ```yaml
 name: Admin
@@ -10,9 +10,9 @@ privKey: d0ebe3276e1a9a87ab5c183aa76099578963f5053fcfcdf2492b5382838c158a
 pubKey: 02eac3f42f6192b898652c8eea24fc00e0d9ddfbf3b73b55dda4fd44cb374f82f3
 ```
 
-### Pozostali
+### Alicja, Adam, Ewa, Wiktor, Peggy
 
-Wygenerowane przez `/5/user/admin_generate_users.js`.
+Wygenerowane przez `/user/admin_generate_users.js`.
 
 ```yaml
 name: Alicja
@@ -82,7 +82,7 @@ Verification: true
 
 # Załączniki
 
-Wygenerowane przez `/5/user/alice_sign_attachments.js` *(wchodzi w skład głosowania do podpisu)*.
+Wygenerowane przez `/user/alice_sign_attachments.js` *(wchodzi w skład głosowania do podpisu)*.
 
 ```yaml
 message: {
@@ -145,15 +145,15 @@ maximumValue: 10n
 
 Ręcznie przepisane *(wchodzi w skład głosowania do podpisu)*:
 
-- `0326605e51658dacbcae40879a3e999d81fe01c352948347205c7de5484f923426` - Alicja
-- `020340726a7434cb3cf0e4a32b546497079330145525d52c0fee38d48df384a282` - Adam
-- `024e747154f1843e8e24b750e6ac3f96b9206ed98a7fa13585321031f1d8019fdb` - Ewa
-- `03b7e0e0383a0908ab0c33fb6b00519ad78312c8f2a15e8d6ea8671f500e47eddd` - Wiktor
-- `021435d498cbe86ad67a8b62b768197543e88f3330c054f358ad153ec5fb898b70` - Peggy
+- `0326605e51658dacbcae40879a3e999d81fe01c352948347205c7de5484f923426` - Alicja, klucz publiczny
+- `020340726a7434cb3cf0e4a32b546497079330145525d52c0fee38d48df384a282` - Adam, klucz publiczny
+- `024e747154f1843e8e24b750e6ac3f96b9206ed98a7fa13585321031f1d8019fdb` - Ewa, klucz publiczny
+- `03b7e0e0383a0908ab0c33fb6b00519ad78312c8f2a15e8d6ea8671f500e47eddd` - Wiktor, klucz publiczny
+- `021435d498cbe86ad67a8b62b768197543e88f3330c054f358ad153ec5fb898b70` - Peggy, klucz publiczny
 
 # Głosowanie
 
-Wygenerowane przez `/5/user/alice_sign_poll.js`.
+Wygenerowane przez `/user/alice_sign_poll.js`.
 
 ```yaml
 message: {
@@ -206,7 +206,7 @@ hash: 832f4e8e2ba8f691f1c48eee4d6fb502783d92b8a2a5a43efab5a7e4d40b07bb
 
 # Wpisy
 
-Wygenerowane przez `/5/user/generate_entries.js`.
+Wygenerowane przez `/user/generate_entries.js`.
 
 ```yaml
 publicKey: 0326605e51658dacbcae40879a3e999d81fe01c352948347205c7de5484f923426
@@ -299,13 +299,13 @@ Ręczną weryfikacja Merkle Tree Root można dokonać przy urzyciu: [Poseidon On
 
 Dodatkowo wpisy formują łańcuch, co gwarantuje cięższe usówanie głosów.
 
-Układ odpowiedzialny za generowanie dowodu: [circuit.circom](proof/circuit.circom).
+Układ odpowiedzialny za generowanie dowodu: `/proof/circuit.circom`
 
 Dowód może się różnić od potęg $\tau$ użytych do konstrukcji kluczy. Użyty tutaj system zkSNARK nie jest jedynym systemem oferującym jakiś dowód wykonania określonych obliczeń.
 
 # Głos
 
-Wygenerowane przez `/5/proof/generate_proof.js`.
+Wygenerowane przez `/proof/generate_proof.js`.
 
 ### 1. Ewa -> "Waniliowy"
 ```yaml
