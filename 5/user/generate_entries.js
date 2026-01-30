@@ -35,22 +35,27 @@ const SerializeBigInt = v => v.toString();
 
 const users = [
     {
+        //Alicja
         privateKey: "8dfc2aab04a48914bee1fef90f5357f9120651f172d879ea29fd2222cf8b72dc",
         s: 123n,
         k: 456n
     },{
+        //Adam
         privateKey: "91de483be3a69963953ff3c557feeda1a44cbec64b59b544cbc734ee992fe8f4",
         s: 321n,
         k: 654n
     },{
+        //Ewa
         privateKey: "78fa750061d1dec95949ae3e64e36b2966f2bdbd0bfc55ad97536b6f7e32a813",
         s: 345n,
         k: 357n
     },{
+        //Wiktor
         privateKey: "92a3d644990929657cd9514a444482b907d59b5425bf992c3e3154217605e5d5",
         s: 11,
         k: 11
     },{
+        //Peggy
         privateKey: "665ff0478cf3190c22acff57c8ddfeb004891553c0028297467a9505e741f031",
         s: 13,
         k: 18

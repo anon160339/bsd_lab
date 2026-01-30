@@ -530,14 +530,22 @@ WHERE
 
 --================================================================
 
--- System (po weryfikacji dowodu z aktualnym stanem tablicy wpisów i opcjami dla danego głosowania) rejestruje głos dostarczony z dowolnego źródła (na przykład klient z siesi TOR).
-
+-- System otrzymuje wiadomość twierdzącą że jest głosem do głosowania Alicji o nazwie 'my-first-anon-poll'.
+-- System z wiadomości odczytuje i werifikuje:
+-- -- dowód (przeciwko aktualnym wpisom z tego głosowania (poprzez Merkle Root)).
+-- -- referencje do poprzedniego oddanego głosu.
+-- -- czy głos pasuje do odpowiedzi za którą się podaje pasować. (opcjonalne)
+-- -- -- Głos pasuje do opcji "Waniliowy".
+-- Tajemnice:
+-- -- Głos stworzyła Ewa.
 
 INSERT INTO VOTES (
+    --public signals
     vote_value,
     vote_entries_root,
     vote_nullifier,
     vote_previous_vote,
+    --proof
     proof_vote,
     --x
     poll_user_info_public_key,
@@ -547,31 +555,33 @@ INSERT INTO VOTES (
     option_info_public_key,
     option_info_name
 ) VALUES (
+    --public signals
     UTL_RAW.CAST_FROM_BINARY_INTEGER(5),
     HEXTORAW('2d03b1877636458a8f9fda78d8d63a44b67e07239b0f54d6092546f13c5a718b'),
     UTL_RAW.CAST_FROM_BINARY_INTEGER(357),
     NULL,
+    --proof
     '
         Proof:  {
             pi_a: [
-                ''19222515885482555574088776589274233681564771102426271059565918485904120691454'',
-                ''4139213198177224643723548907067595753863154583137813579566728867029534926452'',
+                ''7456716481124659950509027749823111439967119224999623128666054978646669623693'',
+                ''12867528627647035972917425175769377212605693550290147798522133006584018793450'',
                 ''1''
             ],
             pi_b: [
-                [
-                    ''2761310635738750977452799847013233306045442303438763370798313599807989985233'',
-                    ''18413404880803304148721441633344941887238552906286344462025779976191127789335''
-                ],
-                [
-                    ''20288143549745153802311626885652548314186593488329450261354277886013305517502'',
-                    ''7734566924448947478599670985879576571752019839438538623302465409677743663686''
-                ],
-                [ ''1'', ''0'' ]
+            [
+                ''12274876802892825536200518468454710630706862687146687087342056139368249113458'',
+                ''662538945601097333347314948361140670632185400857868291234807497603827606455''
+            ],
+            [
+                ''5761401589575314823860779859900729754580404160730226104986056854650452693433'',
+                ''15882391798219619377345702854890739713831294419411971955398517664014168352605''
+            ],
+            [ ''1'', ''0'' ]
             ],
             pi_c: [
-                ''1754651139138588835659681745609113285150650401766044683332245633482631604405'',
-                ''2041179713425804841108349351521361861116792858167425461645025724151263758941'',
+                ''9150254738269055018421174969301494840305535769112263271389375157610088324272'',
+                ''2357319119627052614714378919254195791616588974621564076598381317980255952926'',
                 ''1''
             ],
             protocol: ''groth16'',
@@ -587,7 +597,266 @@ INSERT INTO VOTES (
     'my-first-anon-poll'
 );
 
+--================================================================
 
+-- System otrzymuje wiadomość twierdzącą że jest głosem do głosowania Alicji o nazwie 'my-first-anon-poll'.
+-- System z wiadomości odczytuje i werifikuje: ..
+-- -- -- Głos pasuje do opcji "nie wiem, ale napewno dobry.".
+-- Tajemnice:
+-- -- Głos stworzyła Peggy.
 
+INSERT INTO VOTES (
+    --public signals
+    vote_value,
+    vote_entries_root,
+    vote_nullifier,
+    vote_previous_vote,
+    --proof
+    proof_vote,
+    --x
+    poll_user_info_public_key,
+    poll_info_name,
+    --y (optional)
+    option_name,
+    option_info_public_key,
+    option_info_name
+) VALUES (
+    --public signals
+    UTL_RAW.CAST_FROM_BINARY_INTEGER(3),
+    HEXTORAW('2d03b1877636458a8f9fda78d8d63a44b67e07239b0f54d6092546f13c5a718b'),
+    UTL_RAW.CAST_FROM_BINARY_INTEGER(18),
+    HEXTORAW('2fca57749ab98db515908cbd0c2851186d948241959b42b394a576763e83774f'),
+    --proof
+    '
+        Proof:  {
+            pi_a: [
+                ''19214662446847614726307124147241137523628783728849910787628953923176893842074'',
+                ''13522600439169260269092321174820469746853640370816801351776971013011856774692'',
+                ''1''
+            ],
+            pi_b: [
+            [
+                ''8854447574722544804681750239833939071323986602876884218196139203094058060250'',
+                ''19375976840536401153477478663190495794010865186636786622334560129095187274217''
+            ],
+            [
+                ''5628196813012863736040099900101491927658435373692586940291610046030557794875'',
+                ''2354350681778172883597199595425962670327575658216259448628752445141724309884''
+            ],
+            [ ''1'', ''0'' ]
+            ],
+            pi_c: [
+                ''20087165419424693623414231129057051414942860835658786943041849260732717129181'',
+                ''6383726196582619140992509560779177343238290484115375568366521489724680509362'',
+                ''1''
+            ],
+            protocol: ''groth16'',
+            curve: ''bn128''
+        }
+    ',
+    --x
+    HEXTORAW('0326605e51658dacbcae40879a3e999d81fe01c352948347205c7de5484f923426'),
+    'my-first-anon-poll',
+    --y (optional)
+    'nie wiem, ale napewno dobry.',
+    HEXTORAW('0326605e51658dacbcae40879a3e999d81fe01c352948347205c7de5484f923426'),
+    'my-first-anon-poll'
+);
 
+--================================================================
 
+-- System otrzymuje wiadomość twierdzącą że jest głosem do głosowania Alicji o nazwie 'my-first-anon-poll'.
+-- System z wiadomości odczytuje i werifikuje: ..
+-- -- -- Głos pasuje do opcji "Pomarańczowy".
+-- Tajemnice:
+-- -- Głos stworzył Adam.
+
+INSERT INTO VOTES (
+    --public signals
+    vote_value,
+    vote_entries_root,
+    vote_nullifier,
+    vote_previous_vote,
+    --proof
+    proof_vote,
+    --x
+    poll_user_info_public_key,
+    poll_info_name,
+    --y (optional)
+    option_name,
+    option_info_public_key,
+    option_info_name
+) VALUES (
+    --public signals
+    UTL_RAW.CAST_FROM_BINARY_INTEGER(1),
+    HEXTORAW('2d03b1877636458a8f9fda78d8d63a44b67e07239b0f54d6092546f13c5a718b'),
+    UTL_RAW.CAST_FROM_BINARY_INTEGER(654),
+    HEXTORAW('19b93e23249980d20ca73527c1a064ce80e0c0cb24a37adb224422f0a339aafb'),
+    --proof
+    '
+        Proof:  {
+            pi_a: [
+                ''11231446296647509913794553670694148641632532181753547613796723868721058088381'',
+                ''10661940433115121261648029364688337610616901233534083599755050522178145167905'',
+                ''1''
+            ],
+            pi_b: [
+            [
+                ''18000986517910164435475391488913449271834424589522520327424872780587401801874'',
+                ''4338197605237898238724981902503734988218411373868344897437722910620141419127''
+            ],
+            [
+                ''9729738128079901156591993537167654379107476187804992859423098539391446733901'',
+                ''10511831223006219765701039808011303486100461822980248465197704077500517292296''
+            ],
+            [ ''1'', ''0'' ]
+            ],
+            pi_c: [
+                ''19806447765597768406886696588823506308764027984059822916968974477453398237662'',
+                ''20935420662381021762001237898919590119861972445489650872565103114374938209000'',
+                ''1''
+            ],
+            protocol: ''groth16'',
+            curve: ''bn128''
+        }
+    ',
+    --x
+    HEXTORAW('0326605e51658dacbcae40879a3e999d81fe01c352948347205c7de5484f923426'),
+    'my-first-anon-poll',
+    --y (optional)
+    'Pomarańczowy',
+    HEXTORAW('0326605e51658dacbcae40879a3e999d81fe01c352948347205c7de5484f923426'),
+    'my-first-anon-poll'
+);
+
+--================================================================
+
+-- System otrzymuje wiadomość twierdzącą że jest głosem do głosowania Alicji o nazwie 'my-first-anon-poll'.
+-- System z wiadomości odczytuje i werifikuje: ..
+-- -- -- Głos pasuje do opcji "Waniliowy".
+-- Tajemnice:
+-- -- Głos stworzyła Alicja.
+
+INSERT INTO VOTES (
+    --public signals
+    vote_value,
+    vote_entries_root,
+    vote_nullifier,
+    vote_previous_vote,
+    --proof
+    proof_vote,
+    --x
+    poll_user_info_public_key,
+    poll_info_name,
+    --y (optional)
+    option_name,
+    option_info_public_key,
+    option_info_name
+) VALUES (
+    --public signals
+    UTL_RAW.CAST_FROM_BINARY_INTEGER(5),
+    HEXTORAW('2d03b1877636458a8f9fda78d8d63a44b67e07239b0f54d6092546f13c5a718b'),
+    UTL_RAW.CAST_FROM_BINARY_INTEGER(456),
+    HEXTORAW('084ea7db04fac878a5fede67ac93adbb6346eba0033a46bd9fc3c666724d4de4'),
+    --proof
+    '
+        Proof:  {
+            pi_a: [
+                ''7578483591381076706252810815242419246088117844058589405421689731862292687535'',
+                ''13274503974129161219417127740763602766298737793291077735508110193944066051537'',
+                ''1''
+            ],
+            pi_b: [
+            [
+                ''10696145016025012846418594800332156087989556139564815235367919326551521377221'',
+                ''5189311616136497197419019199028630521228641517806959542389324828459023059468''
+            ],
+            [
+                ''5161871448741274117461153184404795655405629089661244197773775050079956075205'',
+                ''20660751655263444107855864336459740382220844158441440503071713351829525645972''
+            ],
+            [ ''1'', ''0'' ]
+            ],
+            pi_c: [
+                ''5223300377319316852112919038015968805217028671696002856333443254254898526583'',
+                ''15520643780610599636489151074561733541300917267115840557734701759243512978761'',
+                ''1''
+            ],
+            protocol: ''groth16'',
+            curve: ''bn128''
+        }
+    ',
+    --x
+    HEXTORAW('0326605e51658dacbcae40879a3e999d81fe01c352948347205c7de5484f923426'),
+    'my-first-anon-poll',
+    --y (optional)
+    'Waniliowy',
+    HEXTORAW('0326605e51658dacbcae40879a3e999d81fe01c352948347205c7de5484f923426'),
+    'my-first-anon-poll'
+);
+
+--================================================================
+
+-- System otrzymuje wiadomość twierdzącą że jest głosem do głosowania Alicji o nazwie 'my-first-anon-poll'.
+-- System z wiadomości odczytuje i werifikuje: ..
+-- -- -- Głos pasuje do opcji "Waniliowy".
+-- Tajemnice:
+-- -- Głos stworzył Wiktor.
+
+INSERT INTO VOTES (
+    --public signals
+    vote_value,
+    vote_entries_root,
+    vote_nullifier,
+    vote_previous_vote,
+    --proof
+    proof_vote,
+    --x
+    poll_user_info_public_key,
+    poll_info_name,
+    --y (optional)
+    option_name,
+    option_info_public_key,
+    option_info_name
+) VALUES (
+    --public signals
+    UTL_RAW.CAST_FROM_BINARY_INTEGER(5),
+    HEXTORAW('2d03b1877636458a8f9fda78d8d63a44b67e07239b0f54d6092546f13c5a718b'),
+    UTL_RAW.CAST_FROM_BINARY_INTEGER(11),
+    HEXTORAW('16da5378aa311afd74dc8f87c0c0198f5165c6a645f4ec291c0b15daac966e8d'),
+    --proof
+    '
+    Proof:  {
+        pi_a: [
+            ''6579768207168992275960395332553907387459136904149846669843341641152984394728'',
+            ''19513128315558733400679493517326443959054440159947880504796049173437453455452'',
+            ''1''
+        ],
+        pi_b: [
+        [
+            ''17567333708405009156459909241387168429421030166073663848262006750345303628540'',
+            ''6926438840823708948710608994475699940388559065774755823970689164742451744037''
+        ],
+        [
+            ''20372164667392994037958169695528389446223222139460300264691626630342377558821'',
+            ''20913223004505397352067402841778863017107833772659301503795807283800669244701''
+        ],
+        [ ''1'', ''0'' ]
+        ],
+        pi_c: [
+            ''20106978346511674478517330523081705756084761129676728075186374129188854382269'',
+            ''2773626474865952526614450928215282800181536879967642534658857478269690096326'',
+            ''1''
+        ],
+        protocol: ''groth16'',
+        curve: ''bn128''
+    }
+    ',
+    --x
+    HEXTORAW('0326605e51658dacbcae40879a3e999d81fe01c352948347205c7de5484f923426'),
+    'my-first-anon-poll',
+    --y (optional)
+    'Waniliowy',
+    HEXTORAW('0326605e51658dacbcae40879a3e999d81fe01c352948347205c7de5484f923426'),
+    'my-first-anon-poll'
+);
